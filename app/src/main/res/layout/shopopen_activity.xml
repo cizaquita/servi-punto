@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/shopopen_header_panel" >
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/pnl_Header"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/shopopen_details" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/view_row" />
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_shop_close"
+            style="@style/btn_main"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cash_button"
+            android:padding="10dp"
+            android:text="@string/btn_close"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/btn_shop_cancel"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/btn_shop_close"
+            android:background="@drawable/new_cancel"
+            android:padding="10dp"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

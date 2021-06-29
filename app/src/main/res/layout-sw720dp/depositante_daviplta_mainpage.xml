@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_cashregisterHeader"
+        layout="@layout/deposito_daviplata_header" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_cashregisterHeader"
+        layout="@layout/view_row" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/voilet_blue"
+        android:padding="10dp"
+        android:text="@string/deposito_daviplate_header"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/deposit_daviplate"
+        layout="@layout/depositante_daviplata" />
+
+</LinearLayout>

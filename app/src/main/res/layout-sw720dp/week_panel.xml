@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="15dp"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:id="@+id/layout_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supp_businessdays"
+            android:textColor="@color/black_color"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_WeekMon"
+            style="@style/btn_menu_week"
+            android:layout_marginLeft="20dp"
+            android:text="@string/week_mon"/>
+
+        <Button
+            android:id="@+id/btn_WeekTue"
+            style="@style/btn_menu_week"
+            android:text="@string/week_tue"/>
+
+        <Button
+            android:id="@+id/btn_WeekWed"
+            style="@style/btn_menu_week"
+            android:text="@string/week_wed"/>
+
+        <Button
+            android:id="@+id/btn_WeekThu"
+            style="@style/btn_menu_week"
+            android:text="@string/week_thu"/>
+
+        <Button
+            android:id="@+id/btn_WeekFri"
+            style="@style/btn_menu_week"
+            android:text="@string/week_fri"/>
+
+        <Button
+            android:id="@+id/btn_WeekSat"
+            style="@style/btn_menu_week"
+            android:text="@string/week_sat"/>
+
+        <Button
+            android:id="@+id/btn_WeekSun"
+            style="@style/btn_menu_week"
+            android:text="@string/week_sun"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supp_freq_visit"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spn_freqvisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/freqvisit_dropdown" />
+    </LinearLayout>
+
+</LinearLayout>

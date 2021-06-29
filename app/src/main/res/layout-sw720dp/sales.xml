@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@color/white_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_SalesHeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sale_tab"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_subpanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_SalesAdpaDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/w_home_icon"
+                    android:onClick="showMenuScreen" />
+
+                <TextView
+                    android:id="@+id/txt_ProductTitle"
+                    style="@style/sales_txt_headers"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sales_product" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/sale_view" />
+
+            <TextView
+                android:id="@+id/txt_PriceTitle"
+                style="@style/sales_txt_headers"
+                android:layout_gravity="center_vertical"
+                android:text="@string/sales_price" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/sale_view" />
+
+            <TextView
+                android:id="@+id/txt_QuantityTitle"
+                style="@style/sales_txt_headers"
+                android:layout_gravity="center_vertical"
+                android:text="@string/quantity" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/sale_view" />
+
+            <TextView
+                android:id="@+id/txt_UnitsTitle"
+                style="@style/sales_txt_headers"
+                android:layout_gravity="center_vertical"
+                android:text="@string/sales_units" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_SalesProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_CustomerDetails"
+            android:layout_below="@+id/ll_SalesHeaders"
+            android:layout_marginBottom="5dp"
+            android:divider="@color/sale_view"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/lv_SalesProduct"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/ll_CustomerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/sales_user_details" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8" >
+
+                    <Button
+                        android:id="@+id/btn_SalesUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/sales_user_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/txt_SalesCustomerName"
+                        style="@style/sales_txt_customer"
+                        android:text="@string/sales_custome" />
+
+                    <TextView
+                        android:id="@+id/txt_SalesCustomerPhone"
+                        style="@style/sales_txt_customer"
+                        android:layout_below="@+id/txt_SalesCustomerName"
+                        android:text="@string/sales_phone" />
+
+                    <TextView
+                        android:id="@+id/txt_SalesCustomerId"
+                        style="@style/sales_txt_customer"
+                        android:layout_below="@+id/txt_SalesCustomerPhone"
+                        android:text="@string/sales_id" />
+
+                    <TextView
+                        android:id="@+id/txt_SalesCustomerCredit"
+                        style="@style/sales_txt_customer"
+                        android:layout_below="@+id/txt_SalesCustomerId"
+                        android:text="@string/sales_credit" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_TotalItems"
+                        style="@style/sales_txt_customer"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/sales_total_items" />
+
+                    <TextView
+                        android:id="@+id/txt_SubTotalAmt"
+                        style="@style/sales_txt_customer"
+                        android:text="@string/sales_sub_total" />
+
+                    <TextView
+                        android:id="@+id/txt_Vat"
+                        style="@style/sales_txt_customer"
+                        android:text="@string/vat" />
+
+                    <TextView
+                        android:id="@+id/txt_Discount"
+                        style="@style/sales_txt_customer"
+                        android:text="@string/sales_discount" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/sale_tab"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_TotalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="@string/sales_total_amount"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2.2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sales_row"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_Barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/etxt_SalesBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/barcode_input"
+                    android:gravity="right|center_vertical"
+                    android:maxLength="19"
+                    android:inputType="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <Button
+                    android:id="@+id/btn_SalesBarCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/barcode_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Calculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_SalesCalSeven"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/seven" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalFour"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/four" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalOne"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/one" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalClearOne"
+                        style="@style/sales_btn_cal"
+                        android:background="@drawable/calcu_remove_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_SalesCalEight"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/eight" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalFive"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalTwo"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/two" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalZero"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/zero" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_SalesCalNine"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/nine" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalSix"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalThree"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/three" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalClear"
+                        style="@style/sales_btn_cal"
+                        android:text="@string/clear" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_SalesCalSearch"
+                        style="@style/sales_btn_cal"
+                        android:background="@drawable/calcu_search_bg" />
+
+                    <Button
+                        android:id="@+id/btn_SalesCalEnter"
+                        style="@style/sales_btn_cal"
+                        android:background="@drawable/calcu_enter_bg" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_SaleEnd"
+                    style="@style/sales_btn_end"
+                    android:background="@drawable/cash_button"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/end_sale"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_SaleCancel"
+                    style="@style/sales_btn_end"
+                    android:background="@drawable/new_cancel"
+                    android:text="@string/cancel_sale"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/spn_delivery"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    style="@style/etxt_delivery"
+                    android:background="@drawable/inventory_input_filed_dropdown"
+                    android:imeOptions="flagNoExtractUi" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:background="@color/sale_view"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@color/sale_tab"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_SalesAddCustomer"
+                    style="@style/sales_ll_options" >
+
+                    <Button
+                        android:id="@+id/btn_SaleAddCustomer"
+                        style="@style/sales_btn_options"
+                        android:background="@drawable/sales_client_bg" />
+
+                    <TextView
+                        android:id="@+id/txt_SalesAddCustomer"
+                        style="@style/sales_txt_options"
+                        android:text="@string/add_client" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_SalesDiscount"
+                    style="@style/sales_ll_options" >
+
+                    <Button
+                        android:id="@+id/btn_SaleDiscount"
+                        style="@style/sales_btn_options"
+                        android:background="@drawable/sales_discount_bg" />
+
+                    <TextView
+                        android:id="@+id/txt_SaleDiscounts"
+                        style="@style/sales_txt_options"
+                        android:text="@string/discount_opt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_SalesInvoice"
+                    style="@style/sales_ll_options" >
+
+                    <Button
+                        android:id="@+id/btn_SaleInvoiceAdj"
+                        style="@style/sales_btn_options"
+                        android:background="@drawable/sales_invoice_bg" />
+
+                    <TextView
+                        android:id="@+id/txt_SaleInvoiceAdj"
+                        style="@style/sales_txt_options"
+                        android:text="@string/invoice_opt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txt_product"
+        style="@style/txt_client_row"
+        android:layout_weight="0.09"
+        android:paddingBottom="10dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp" 
+        android:paddingRight="10dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/supplier_div_text" />
+
+    <TextView
+        android:id="@+id/txt_quantity"
+        style="@style/txt_client_row"
+        android:layout_weight="0.12"
+        android:paddingLeft="4dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/supplier_div_text" />
+
+    <TextView
+        android:id="@+id/txt_physicalinv"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/supplier_div_text" />
+
+    <ImageView
+        android:id="@+id/img_adjust"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.14"
+        android:src="@drawable/pay_icon_bg" />
+
+    
+
+</LinearLayout>

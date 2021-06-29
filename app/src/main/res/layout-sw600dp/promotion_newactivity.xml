@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pnl_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            style="@style/header_logo"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/m_promotion" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            style="@style/header_home_icon"
+            android:contentDescription="@string/img_content_desc"
+            android:onClick="showMenuScreen"
+            android:src="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/txt_reportName"
+            style="@style/header_title"
+            android:layout_toRightOf="@+id/img_logo"
+            android:text="@string/promotions"
+            android:textColor="@color/black_color" />
+
+        <Button
+            android:id="@+id/btn_MorePromotions"
+            style="@style/btn_header"
+            android:layout_alignBottom="@+id/img_home"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_home"
+            android:background="@drawable/morepromotion_header_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/more_promotions"
+            android:visibility="gone" />
+
+        <Gallery
+            android:id="@+id/promotion_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/img_home"
+            android:layout_toLeftOf="@+id/btn_MorePromotions"
+            android:layout_toRightOf="@+id/txt_reportName" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pnl_Header"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/promotion_header_row"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/list_header_row"
+                android:layout_weight="0.09"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/providername" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/promotion_div_color" />
+
+            <TextView
+                style="@style/list_header_row"
+                android:layout_weight="0.09"
+                android:text="@string/image_view" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/promotion_div_color" />
+
+            <TextView
+                style="@style/list_header_row"
+                android:layout_weight="0.09"
+                android:text="@string/video_view" />
+
+            <View
+                android:id="@+id/txtbuy_view"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/promotion_div_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/promotion_buytxt"
+                style="@style/list_header_row"
+                android:layout_weight="0.09"
+                android:text="@string/buy_button"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_color" />
+
+        <GridView
+            android:id="@+id/gv_Promotions"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white_color"
+            android:clickable="false"
+            android:divider="@color/inventory_view"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

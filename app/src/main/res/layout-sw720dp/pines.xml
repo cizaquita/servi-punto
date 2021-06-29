@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/pines_header" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/new_view_row" />
+
+    <LinearLayout
+        android:id="@+id/ll_frstcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/client_list_view"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/layout_paddingleft"
+        android:layout_marginRight="@dimen/layout_paddingleft"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/sale_tab"
+            android:padding="10dp"
+            android:text="@string/inicio"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/collection_border"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/proveedor"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_select_provider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/txt_supp_label"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:padding="10dp" >
+                        </Spinner>
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/producto"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_select_product"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/txt_supp_label"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:padding="10dp" >
+                        </Spinner>
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/cellular"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_cellular"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_cellularCancel"
+                            style="@style/recharge_bttons"
+                            android:background="@drawable/new_cancel"
+                            android:onClick="showMenuScreen"
+                            android:text="@string/reg_cancel" />
+
+                        <Button
+                            android:id="@+id/btn_cellularSave"
+                            style="@style/recharge_bttons"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/reg_cnfrm" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

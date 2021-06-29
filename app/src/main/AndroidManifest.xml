@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.micaja.servipunto"
+    android:versionCode="10"
+    android:versionName="10.1" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.example.mycontentprovider.permRead" />
+
+    <permission
+        android:name="com.tiendosqui.permission.servi" />
+
+    <permission
+        android:name="android.permission.permRead"
+        android:label="permRead"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="android.permission.permWrite"
+        android:label="permRead"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.micaja.servipunto.ServiApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/luancher_icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <provider
+            android:name="com.micaja.servipunto.providers.OrdersProvider"
+            android:authorities="com.micaja.servipunto.providers.OrdersProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="com.micaja.servipunto.providers.ProductProvider"
+            android:authorities="com.micaja.servipunto.providers.ProductProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="com.micaja.servipunto.providers.SalesProvider"
+            android:authorities="com.micaja.servipunto.providers.SalesProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="com.micaja.servipunto.providers.SalesDetailsProvider"
+            android:authorities="com.micaja.servipunto.providers.SalesDetailsProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="com.micaja.servipunto.providers.DeliveryProvider"
+            android:authorities="com.micaja.servipunto.providers.DeliveryProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="com.micaja.servipunto.providers.ClientProvider"
+            android:authorities="com.micaja.servipunto.providers.ClientProvider"
+            android:readPermission="android.permission.permRead"
+            android:writePermission="android.permission.permWrite"
+            android:grantUriPermissions="true"
+            android:permission="com.tiendosqui.permission.servi"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.micaja.servipunto.activities.RecargasActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.LoginActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MenuActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ShopOpenCloseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ClientsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.DeliveryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.SuppliersActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.InventoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.CashActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.SalesActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.OrdersActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ReportsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PromotionsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MenusActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.AddSupplierActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.AddClientActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.AddDeliveryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.ClientHistoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.DeliveryHistoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.micaja.servipunto.activities.InventoryAdjustActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.AddProductActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ReportDetailsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.OrdersProductsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.OrderFinalActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.OrdersHistoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.SuggestedOrdersActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.CreateDishActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.CreateMenusActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.DishesSeleActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MenusViewsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ProductsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ProductFinalActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.InventoryHistoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ProductSeleDishActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MenuInventoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MenuInventoryAddActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.SalesInventoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PRTSettingsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.DeviceListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PromotionsViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.InventoryDetailHistoryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.MorePromotionsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.RechargeActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PaquetigosActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.DaviPlataPaymentActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ConventionInformationActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.LotterySalesActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PinesActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.CollectionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.CentrosdeAcopioActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.AceptacionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.DevolucionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.RegistrodeEfectivoActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ControlDispersionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.DepositoDaviplataActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.ReportDetailsActivity1"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.activities.PagoPaymentActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.print.PRTSDKApp"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.print.DeviceListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.micaja.servipunto.print.DialogPrint"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name="com.micaja.servipunto.service.PromotionClickService" />
+        <service android:name="com.micaja.servipunto.service.PromotionPurchase" />
+        <service android:name="com.micaja.servipunto.service.ClientUpdateService" />
+        <service android:name="com.micaja.servipunto.service.SupplierUpdateService" />
+        <service android:name="com.micaja.servipunto.service.CellularProvider" />
+        <service android:name="com.micaja.servipunto.service.SincronizarTransacciones" />
+        <service android:name="com.micaja.servipunto.service.TransaccionBoxService" />
+        <service android:name="com.micaja.servipunto.service.SalesDetailsUpdateService" />
+        <service android:name="com.micaja.servipunto.service.AutoSyncService" />
+        <service android:name="com.micaja.servipunto.service.KeyRegistrationService" />
+        <service android:name="com.micaja.servipunto.service.InventoryDbSynckService" />
+        <service android:name="com.micaja.servipunto.service.OpenCashDrawer" />
+        
+        <service android:name="com.micaja.servipunto.service.PullTheDataFromCentralServer" />
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="your tests label"
+        android:targetPackage="com.lycos.servitienda" />
+
+</manifest>

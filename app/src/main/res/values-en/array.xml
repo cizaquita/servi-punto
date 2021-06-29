@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="uom_lst">
+        <item>Select UOM</item>
+        <item>Kg</item>
+        <item>Gm</item>
+        <item>Lt</item>
+        <item>Ml</item>
+    </array>
+    
+    <array name="menu_type">
+        <item>Select Menus Type</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Occasionally</item>
+    </array>
+    
+</resources>

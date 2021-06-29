@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/img_content_desc"
+            android:background="@drawable/menu_logo" />
+
+       
+
+        <ImageView
+            android:id="@+id/img_Printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+              android:layout_alignParentRight="true"
+            android:contentDescription="@string/img_content_desc"
+            android:background="@drawable/printing_icon" />
+
+        <ImageView
+            android:id="@+id/img_changepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_DataCrad"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/change_password_bg" />
+
+        <ImageView
+            android:id="@+id/img_regpago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_changepass"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/rg_pagitigos" />
+
+        <ImageView
+            android:id="@+id/img_DataCrad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_Printer"
+            android:contentDescription="@string/img_content_desc"
+            android:background="@drawable/swipe_icon" />
+
+        <ImageView
+            android:id="@+id/img_Barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_DataCrad"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/barcode"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_Icon_Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_DataCrad"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/icon_chat"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_Recharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@+id/img_Icon_Chat"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/puntored"
+            android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/img_Sync"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:layout_toLeftOf="@+id/img_regpago"
+             android:background="@drawable/sync_icon"
+             android:contentDescription="@string/img_content_desc" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/menu_div"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_div" />
+
+</LinearLayout>

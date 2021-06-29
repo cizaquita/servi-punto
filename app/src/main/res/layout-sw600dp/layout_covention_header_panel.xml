@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pnl_Header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@color/white_color"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/header_logo"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/logo_icon" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        style="@style/header_home_icon"
+        android:contentDescription="@string/img_content_desc"
+        android:onClick="showMenuScreen"
+        android:src="@drawable/bhome_icon" />
+
+    <TextView
+        android:id="@+id/txt_reportName"
+        style="@style/header_title"
+        android:layout_toRightOf="@+id/img_logo"
+        android:text="@string/convention_title"
+        android:textColor="@color/sale_view" />
+
+    <Button
+        android:id="@+id/btn_MorePromotions"
+        style="@style/btn_header"
+        android:layout_alignBottom="@+id/img_home"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/img_home"
+        android:background="@drawable/morepromotion_header_btn_bg"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="@string/more_promotions"
+        android:visibility="gone" />
+
+    <Gallery
+        android:id="@+id/promotion_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/img_home"
+        android:layout_toLeftOf="@+id/btn_MorePromotions"
+        android:layout_toRightOf="@+id/txt_reportName" />
+
+</RelativeLayout>

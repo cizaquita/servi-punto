@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_item_menu_new" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        style="@style/img_menu_new"
+        android:layout_height="100dp"
+        android:background="@drawable/menuitem_shop_bg" />
+
+    <TextView
+        android:id="@+id/item_name"
+        style="@style/txt_menu"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/item_image"
+        android:text="@string/shopopne"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:gravity="right" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/customer_tab" >
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.10"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/date"
+        android:textColor="@color/white_color" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.10"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/amnt_reason"
+        android:textColor="@color/white_color" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:text="@string/txt_initialdebt"
+        android:textColor="@color/white_color" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:text="@string/pay"
+        android:textColor="@color/white_color" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/balance"
+        android:textColor="@color/white_color" />
+
+</LinearLayout>

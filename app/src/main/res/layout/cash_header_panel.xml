@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pnl_Header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/header_logo"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/m_cash_managment" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        style="@style/header_home_icon"
+        android:contentDescription="@string/img_content_desc"
+        android:onClick="showMenuScreen"
+        android:src="@drawable/bhome_icon" />
+
+    <TextView
+        style="@style/header_title"
+        android:layout_toRightOf="@+id/img_logo"
+        android:text="@string/title_cash" 
+        android:textColor="@color/sale_view"  />
+
+    <EditText
+        android:id="@+id/cash_Moneybox"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/img_home"
+        android:background="@drawable/cash_onhand_label"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/sale_tab"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/cash_Moneybox"
+        android:text="@string/cash_moneybox"
+        android:textColor="@color/sale_view"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

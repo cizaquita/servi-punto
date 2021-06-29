@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="20dp"
+    android:background="@color/white_color" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/pay_title"
+            android:textColor="@color/white_color"
+            android:background="@color/blue_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etxt_bal"
+            android:layout_below="@+id/txt_dialog_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/balance"
+            android:textColor="@color/black_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxt_bal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dialog_title"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/txt_bal"
+            android:background="@drawable/etxt_bg"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btn_dialog_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/addclient_innerbtn_bg"
+            android:padding="15dp"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_dialog_Save"
+            android:background="@drawable/addclient_innerbtn_bg"
+            android:padding="15dp"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

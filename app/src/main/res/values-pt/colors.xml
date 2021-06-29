@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_color">#000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="bule_color">#0000FF</color>
+    <color name="light_gray_color">#7c7c7c</color>
+    <color name="light_blue_color">#a6c4cb</color>
+    <color name="blue_color">#0cbfeb</color>
+    <color name="green_color">#4c9f3c</color>
+    <color name="red">#ffff0000</color>
+    <color name="red_color">#ff0000</color>
+    <color name="supplier_header_color">#eb9e74</color>
+    <color name="supplier_rowitem_color">#cac4c0</color>
+    <color name="supplier_div_text">#e5e2e0</color>
+    <color name="cash_header_color">#96c400</color>
+    <color name="sales_violet">#9263e0</color>
+    <color name="sales_row">#ebeae9</color>
+    <color name="sales_options">#c9b1f0</color>
+    <color name="sales_amount">#abd12e</color>
+    <color name="reports_list_row_bg_select">#B7B1B1</color>
+    <color name="reports_header_row">#434141</color>
+    <color name="transparent">#99FFFFFF</color>
+    <color name="transparent1">#80000000</color>
+    
+    
+    <!-- ***************************  New Color.xml ******************************** -->
+
+    <color name="inventory_view">#a4a4a4</color>
+    <color name="inventory_tab"> #5c5c5c</color>
+    <color name="sale_view">#0a506a</color>
+    <color name="sale_tab">#357e99</color>
+    <color name="customer_tab">#ff784d</color>
+    <color name="customer_view">#eb5424</color>
+    <color name="changepwd_tab">#ae3d78</color>
+    <color name="btn_accpet">#428e16</color>
+    <color name="btn_reject">#ff0000</color>
+
+</resources>

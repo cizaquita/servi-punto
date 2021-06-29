@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lyout_payment_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            style="@style/header_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@drawable/m_twits" />
+
+        <TextView
+            android:id="@+id/txt_dialog_modulo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_homemenu"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/img_homemenu"
+            android:layout_toRightOf="@+id/img_logo"
+            android:gravity="left|center"
+            android:text="@string/supp_payment"
+            android:textColor="@color/black_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_homemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_desc"
+            android:onClick="showMenuScreen"
+            android:padding="10dp"
+            android:src="@drawable/bhome_icon" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/lyout_payment_header"
+        layout="@layout/new_view_row" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyout_payment_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/sale_tab"
+        android:padding="10dp"
+        android:text="@string/inicio"
+        android:textColor="@color/white_color"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_btn"
+        android:layout_below="@+id/text_view"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/payment_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_content_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/collection_border"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/proveedor"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/spi_provider_id"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/producto"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/spi_product_id"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/programa"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/spi_programa_id"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/spnlayout_tipo_de_document"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/tipo_de_documento"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/spi_tipo_id"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/pagopayment_textView0"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/numero_de_documento"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/ed_numere_de_documento"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="15" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payment_conformation_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_codigo_otplayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/codigo_otp"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/edt_codigo_otp"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_celular"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/cellular"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/edt_celular"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="@string/confirm_celular"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/edt_conform_celular"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="Email"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="20"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:text="Confirmar Email"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/edt_conform_email"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="20"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_get_otp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/get_otp_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/get_otp"
+                            android:textColor="@color/white_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/dynamic_layout_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dynamic_text_1"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_date_1"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:cursorVisible="false"
+                            android:drawableRight="@drawable/date_picker"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="left|center"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_number_1"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_text_1"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="text"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dynamic_layout_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dynamic_text_2"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_date_2"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:cursorVisible="false"
+                            android:drawableRight="@drawable/date_picker"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="left|center"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_number_2"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_text_2"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="text"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dynamic_layout_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dynamic_text_3"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_date_3"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:cursorVisible="false"
+                            android:drawableRight="@drawable/date_picker"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="left|center"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_number_3"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_text_3"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="text"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dynamic_layout_4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dynamic_text_4"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="0dp"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_date_4"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:cursorVisible="false"
+                            android:drawableRight="@drawable/date_picker"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="left|center"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_number_4"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/dynamic_editext_text_4"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:inputType="text"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_payment_cancel"
+            style="@style/recharge_bttons"
+            android:background="@drawable/new_cancel"
+            android:text="@string/reg_cancel" />
+
+        <Button
+            android:id="@+id/btn_payment_confirm"
+            style="@style/recharge_bttons"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cash_button"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</RelativeLayout>

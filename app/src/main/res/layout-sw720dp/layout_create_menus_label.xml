@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sale_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sale_tab"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/sale_view" />
+
+        <TextView
+            android:id="@+id/txt_MenusNameLeble"
+            style="@style/txt_client_row_item"
+            android:layout_weight="0.09"
+            android:padding="8dp"
+            android:text="@string/dish_name"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/sale_view" />
+
+        <TextView
+            android:id="@+id/txt_MenusPriceLebel"
+            style="@style/txt_client_row_item"
+            android:layout_weight="0.12"
+            android:text="@string/orders_price"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_Divide"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/sale_view" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sale_view" />
+
+</LinearLayout>

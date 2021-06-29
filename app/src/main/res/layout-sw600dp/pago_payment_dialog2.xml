@@ -1,0 +1,361 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_popup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/sale_tab"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/confirmation"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_desc"
+            android:padding="10dp"
+            android:src="@drawable/cancel_btn_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_popup_header"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_proveedor"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/proveedor"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProveedor"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_product"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/product"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                      android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProduct"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_programa"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/programa"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                      android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrograma"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/assitence_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_assistance1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_firstname"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/numero_de_documentos"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtcoloms"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                         android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_num_document"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_lastname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_otp"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/codigo_otp"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                         android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtOtp"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_cellular"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/numero_de_cellulars"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                         android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCellular"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_otp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/email_title"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                         android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                  android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_valore"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valor"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                          android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtValore"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_print"
+            style="@style/recharge_bttons"
+            android:background="@drawable/cash_button"
+            android:text="@string/print" />
+
+        <Button
+            android:id="@+id/btn_leave"
+            style="@style/recharge_bttons"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/new_cancel"
+            android:text="@string/leave" />
+    </LinearLayout>
+
+</RelativeLayout>

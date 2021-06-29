@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/modulo_efectivo_Header"
+        layout="@layout/modulo_efectivo_header_panel" >
+    </include>
+
+    <include
+        android:id="@+id/modulo_acceptence_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/modulo_efectivo_Header"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/modulo_acceptence_view"
+        android:gravity="top" >
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="25dp"
+              android:background="@drawable/collection_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/text_acceptence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acceptence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/customer_tab"
+                    android:padding="10dp"
+                    android:text="@string/acceptance"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_btn"
+                android:layout_below="@+id/acceptence" >
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_acceptence"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_acceptence_value"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/valor"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.85"
+                                android:text=":"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edit_acceptence_value"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_weight="1"
+                                android:digits="1234567890"
+                                android:inputType="number"
+                                android:maxLength="10" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/authenticate_acceptance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/text_authenticate_acceptance"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/authenticate_acceptance"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.85"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/edit_authenticate_acceptance"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/text_distribution_partner"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/distribution_partner"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.85"
+                                android:text=":"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edit_distribution_partner"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_weight="1"
+                                android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890"
+                                android:maxLength="20" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/text_pin_dealer"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pin_dealer"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.85"
+                                android:text=":"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/ed_pin_dealer"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_weight="1"
+                                android:digits="1234567890"
+                                android:inputType="numberPassword"
+                                android:maxLength="4" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/text_acceptence_key"
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/modulo_key"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.85"
+                                android:text=":"
+                                android:textColor="@color/black_color"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/ed_acceptence_key"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_weight="1"
+                                android:digits="1234567890"
+                                android:inputType="numberPassword"
+                                android:maxLength="10"
+                                android:password="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_acceptence_cancel"
+                    style="@style/recharge_bttons"
+                    android:background="@drawable/new_cancel"
+                    android:text="@string/reg_cancel" />
+
+                <Button
+                    android:id="@+id/btn_acceptence_cnfm"
+                    style="@style/recharge_bttons"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cash_button"
+                    android:text="@string/reg_cnfrm" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

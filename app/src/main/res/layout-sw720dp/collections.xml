@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/collections_header" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/new_view_row" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/client_list_view"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/collection_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sale_tab"
+                    android:padding="10dp"
+                    android:text="@string/collection_title1"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/code_of_conve"
+                    android:textColor="@color/black_color"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.80"
+                    android:text=":"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ed_convention_ac_no"
+                    style="@style/etxt_dialog_inv"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"
+                    android:maxLength="13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_weight="1"
+                    android:text="@string/confirm_code_of_conve"
+                    android:textColor="@color/black_color"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.80"
+                    android:text=":"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ed_confirm_convention_ac_no"
+                    style="@style/etxt_dialog_inv"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberPassword"
+                    android:maxLength="13" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/collection_search"
+                    style="@style/btn_main"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cash_button"
+                    android:text="@string/collection_search"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

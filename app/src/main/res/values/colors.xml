@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_color">#000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="text_color">#232323</color>
+    <color name="bule_color">#0000FF</color>
+    <color name="light_gray_color">#7c7c7c</color>
+    <color name="light_blue_color">#a6c4cb</color>
+    <color name="blue_color">#0cbfeb</color>
+    <color name="green_color">#4c9f3c</color>
+    <color name="red">#ffff0000</color>
+    <color name="red_color">#ff0000</color>
+    <color name="client_div_color">#4b8c99</color>
+    <color name="client_header_color">#94dcee</color>
+    <color name="text_color_onwhite">#232323</color>
+    <color name="client_popup_color">#12a1b5</color>
+    <color name="supplier_header_color">#f0b97b</color>
+    <color name="supplier_popup_color">#ad7436</color>
+    <color name="supplier_rowitem_color">#cac4c0</color>
+    <color name="supplier_div_text">#966c3e</color>
+    <color name="shop_header_color">#e7b603</color>
+    <color name="shop_rowitem_color">#ccbf90</color>
+    <color name="shop_div_color">#cea10b</color>
+    <color name="cash_header_color">#0b6914</color>
+    <color name="cash_div_color">#0d7017</color>
+    <color name="cash_popup_header_color">#699a1c</color>
+    <color name="cash_rowitem_color">#23782B</color>
+    <color name="inv_header_row">#8791ff</color>
+    <color name="inv_div_color">#5660da</color>
+    <color name="inv_popup_color">#202db0</color>
+    <color name="sales_violet">#9263e0</color>
+    <color name="sales_row">#ebeae9</color>
+    <color name="sales_options">#c9b1f0</color>
+    <color name="sales_amount">#abd12e</color>
+    <color name="reports_header_row">#737373</color>
+    <color name="reports_div_color">#565656</color>
+    <color name="reports_list_row_bg_select">#bfbec0</color>
+    <color name="reports_list_row_txt_color">#232323</color>
+
+    <!-- *************************** Menus ******************************** -->
+
+    <color name="menus_header">#e96330</color>
+    <color name="menus_list_tab_bg">#ffffff</color>
+    <color name="menus_divider">#b43d0a</color>
+    <color name="menus_popup_header">#12a1b5</color>
+    <color name="login_butto_color">#B3517F</color>
+    <color name="login_butto_pressed_color">#C67199</color>
+    <color name="menu_bg">#2B0342</color>
+
+    <!-- *************************** CashBox ******************************** -->
+
+    <color name="sales_optiontabs">#B2EBFE</color>
+    <color name="client_header">#CACD0E</color>
+    <color name="client_row_color">#E6E93F</color>
+    <color name="client_divcolor">#A1A32C</color>
+    <color name="supp_header_color">#DE841B</color>
+    <color name="supp_row_color">#F9B15D</color>
+    <color name="supp_div_color">#B26A16</color>
+    <color name="promotion_header_row">#ed1e79</color>
+    <color name="promotion_div_color">#790F3E</color>
+    <color name="promotion_header">#C01862</color>
+    <color name="orders_header_row">#19B1E6</color>
+    <color name="orders_div_color">#0083B0</color>
+    <color name="orders_header">#0086B6</color>
+    <color name="cash_header_row">#5aa92e</color>
+    <color name="cash_divcolor">#0A5E12</color>
+    <color name="cash_header"> #0b6914</color>
+    <color name="light_blue">#4682b4</color>
+    <color name="white_trans">#00000000</color>
+    <color name="voilet_blue">#620099</color>
+    <color name="h_divcolor">#34103c</color>
+    <color name="row_view">#ba5d8b</color>
+    <color name="transparent">#99FFFFFF</color>
+    <color name="transparent1">#80000000</color>
+
+    <!-- ***************************  New Color.xml ******************************** -->
+
+    <color name="inventory_view">#a4a4a4</color>
+    <color name="inventory_tab"> #5c5c5c</color>
+    <color name="sale_view">#0a506a</color>
+    <color name="sale_tab">#357e99</color>
+    <color name="customer_tab">#ff784d</color>
+    <color name="customer_view">#eb5424</color>
+    <color name="changepwd_tab">#ae3d78</color>
+    <color name="btn_accpet">#428e16</color>
+    <color name="btn_reject">#ff0000</color>
+
+</resources>

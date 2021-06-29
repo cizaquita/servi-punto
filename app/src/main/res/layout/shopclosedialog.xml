@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        style="@style/shop_close_dialog"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/customer_tab"
+        android:padding="10dp"
+        android:text="@string/close_dialog_title" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        style="@style/shop_close_dialog"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/close_msg"
+        android:textColor="@color/black_color" />
+
+    <TextView
+        android:id="@+id/txt_openbal"
+        style="@style/shop_close_dialog"
+        android:layout_below="@+id/txt_msg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/cash_div_color" />
+
+    <TextView
+        android:id="@+id/txt_closebal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_openbal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/sale_view"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_ActualBal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_closebal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_onwhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_BalErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_ActualBal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_onwhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_BalErrorMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+        <Button
+            android:id="@+id/btn_dialog_save"
+            style="@style/btn_main"
+            android:background="@drawable/cash_button"
+            android:text="@string/btn_close"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            style="@style/btn_main"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/new_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_btns" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_dialog_title"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/img_content_desc"
+        android:padding="10dp"
+        android:src="@drawable/cancel_btn_bg" />
+
+</RelativeLayout>

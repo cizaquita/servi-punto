@@ -1,0 +1,559 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_popup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/sale_tab"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/confiem_data"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_desc"
+            android:padding="10dp"
+            android:src="@drawable/cancel_btn_bg" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_btn"
+        android:layout_below="@+id/layout_popup_header"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_proveedor"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/depositante"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/auth_number"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_product"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cedula"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cnfrm_daviplata_textView1"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_programa"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nombre"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text="@string/view_colon"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cnfrm_daviplata_textView2"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/assitence_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_assistance1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_firstname"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/celular"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtcoloms"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView3"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_lastname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_lastname"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/destineterio"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/txtdlg_document_no"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_values"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cuidad"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView4"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_otp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_otp"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/deviplato_destino"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView5"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtdlg_email"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nombre"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView6"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_numero_de_cuenta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtdlg_numero_de_cuenta"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/puntos_sugeridos"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView7"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout_otps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/costo"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/txtdlg_value_no"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/volor_del_giro"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView8"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/costo_del_giro"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView9"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cnfrm_daviplata_textView10"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/last_linearlayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_valore"
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/clave"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.85"
+                        android:text="@string/view_colon"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/cnfrm_edttxt_daviplata1"
+                        style="@style/etxt_dialog_inv_right"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberPassword"
+                        android:maxLength="10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/recharge_bttons"
+            android:background="@drawable/new_cancel"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_cnfrm"
+            style="@style/recharge_bttons"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cash_button"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+[
+{
+    "cellular_id":"266",
+    "description":"COMCE",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+
+{
+    "cellular_id":"300",
+    "description":"CELLVOZIP",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"304",
+    "description":"UFF",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"350",
+    "description":"AVANTEL",
+    "min_amount":"500",
+    "max_amount":"100000",
+    "multiplier":"500"
+    
+  },
+{
+    "cellular_id":"400",
+    "description":"DIRECTV",
+    "min_amount":"10000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"500",
+    "description":"UNE",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"652",
+    "description":"TIGO",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"100"
+    
+  },
+{
+    "cellular_id":"668",
+    "description":"MOVISTAR",
+    "min_amount":"100",
+    "max_amount":"100000",
+    "multiplier":"1"
+    
+  },
+{
+    "cellular_id":"768",
+    "description":"MOVISTARM",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"903",
+    "description":"ETB",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"905",
+    "description":"UNE 4G",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  },
+{
+    "cellular_id":"906",
+    "description":"VIRGIN MOB",
+    "min_amount":"1000",
+    "max_amount":"100000",
+    "multiplier":"1000"
+    
+  }]

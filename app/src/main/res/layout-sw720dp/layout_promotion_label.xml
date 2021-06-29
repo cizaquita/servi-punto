@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/inventory_tab" >
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/providername" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/image_view" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/video_view" />
+
+    <View
+        android:id="@+id/txtbuy_view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/promotion_buytxt"
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/buy_button"
+        android:visibility="gone" />
+
+</LinearLayout>

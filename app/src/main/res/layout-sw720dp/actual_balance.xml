@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color" >
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/customer_tab"
+        android:padding="10dp"
+        android:text="@string/close_dialog_title"
+        android:textColor="@color/white_color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_ActualAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/order_inv_no"
+            style="@style/txt_dish_create"
+            android:text="@string/actual_balance" />
+
+        <EditText
+            android:id="@+id/etxt_ActualBalance"
+            style="@style/etxt_dish_create"
+            android:layout_width="match_parent"
+            android:background="@drawable/inventory_popup_input_filed"
+            android:inputType="number"
+            android:maxLength="15" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_ActualAmount"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_OK"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cash_button"
+            android:text="@string/ok"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_ActualAmount"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/img_content_desc"
+        android:padding="10dp"
+        android:src="@drawable/cancel_btn_bg"
+        android:visibility="visible" />
+
+</RelativeLayout>

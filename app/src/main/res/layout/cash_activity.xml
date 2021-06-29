@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/cash_header_panel" />
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/client_list_view"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/pnl_row_header"
+            layout="@layout/cash_header_label" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black_color" />
+
+        <ListView
+            android:id="@+id/lv_Cash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:divider="@color/sale_view"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_CashWithdraw"
+            style="@style/btn_cash"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/cash_buttons_bg"
+            android:padding="10dp"
+            android:text="@string/btn_cashWithdraw"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/btn_CashDeposit"
+            style="@style/btn_cash"
+            android:layout_toRightOf="@+id/btn_CashWithdraw"
+            android:background="@drawable/cash_buttons_bg"
+            android:padding="10dp"
+            android:text="@string/btn_cashdeposit"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/customer_tab" >
+
+    <TextView
+        android:id="@+id/product_quantity"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/txt_quantity"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        android:id="@+id/product_profit"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/profitability"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        android:id="@+id/products"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.11"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/products"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        android:id="@+id/product_quntity"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/quantitysold"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/report_view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_totallosers"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/quantitysold"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/reportview2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_state"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/quantitysold"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/reportview3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_operator"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/quantitysold"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/reportview4"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_facturas"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/quantitysold"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dispersio_view1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dispersio_accept"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/dispers_btnaccept"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dispersio_view2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dispersio_reject"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/dispers_btnreject"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

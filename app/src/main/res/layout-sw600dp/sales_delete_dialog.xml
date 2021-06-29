@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:background="@color/white_color"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/txt_DeleteT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/sale_tab"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="6dp"
+        android:text="@string/delete"
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_DeleteT"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:text="@string/sales_delete"
+        android:textColor="@color/black_color"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_DeleteYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cash_button"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_DeleteNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/new_cancel"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

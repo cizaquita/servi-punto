@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/h_divcolor" />
+
+    <TextView
+        android:id="@+id/txt_MenusNameLeble"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.09"
+        android:padding="8dp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal"
+        android:text="@string/dish_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/h_divcolor" />
+
+    <TextView
+        android:id="@+id/txt_MenusPriceLebel"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal"
+        android:text="@string/orders_price" />
+
+    <View
+        android:id="@+id/view_Divide"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/h_divcolor" />
+    
+    <ImageView
+        android:id="@+id/img_DishEdit"
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.13"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/menus_edit_bg"/>
+
+</LinearLayout>

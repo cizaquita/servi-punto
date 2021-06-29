@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/recharge_header_panel" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:id="@+id/ll_frstcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/client_list_view"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/layout_paddingleft"
+        android:layout_marginRight="@dimen/layout_paddingleft"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/sale_tab"
+            android:padding="10dp"
+            android:text="@string/reg_text"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:background="@drawable/collection_border"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:text="@string/operater"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.45"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spi_cel_id"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight=".85"
+                            android:background="@drawable/inventory_popup_input_dropdown"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:text="@string/number"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.45"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etxt_number"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="0.85"
+                            android:inputType="number"
+                            android:maxLength="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:text="@string/paqutius_value"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="250dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/radio1"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="1000" />
+
+                                <RadioButton
+                                    android:id="@+id/radio2"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="2000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/radio3"
+                                    style="@style/recharge_radio_btntext"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="3000" />
+
+                                <RadioButton
+                                    android:id="@+id/radio4"
+                                    style="@style/recharge_radio_btntext"
+                                    android:layout_below="@+id/ll_btn"
+                                    android:text="5000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/radio5"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="10000" />
+
+                                <RadioButton
+                                    android:id="@+id/radio6"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="15000" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/radio10"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="20000" />
+
+                                <RadioButton
+                                    android:id="@+id/radio11"
+                                    style="@style/recharge_radio_btntext"
+                                    android:text="50000" />
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:id="@+id/radio7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/etxt_rbtn_otheramount"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_marginLeft="25dp"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:digits="0123456789"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="45dp"
+                            android:layout_weight="1"
+                            android:maxLines="3"
+                            android:text="@string/theft_text"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:paddingLeft="200dp" >
+
+                        <RadioButton
+                            android:id="@+id/radio8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/reg_yes" />
+
+                        <RadioButton
+                            android:id="@+id/radio9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/reg_no" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_cellularCancel"
+                            style="@style/recharge_bttons"
+                            android:background="@drawable/new_cancel"
+                            android:onClick="showMenuScreen"
+                            android:text="@string/reg_cancel" />
+
+                        <Button
+                            android:id="@+id/btn_cellularSave"
+                            style="@style/recharge_bttons"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/reg_cnfrm" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menus_header" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

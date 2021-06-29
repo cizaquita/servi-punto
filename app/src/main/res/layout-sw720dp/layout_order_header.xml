@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/header_logo"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/m_order" />
+
+    <TextView
+        android:id="@+id/txt_HeaderTitle"
+        style="@style/header_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img_logo"
+        android:text="@string/orders"
+        android:textColor="@color/black_color" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        style="@style/header_home_icon"
+        android:contentDescription="@string/img_content_desc"
+        android:onClick="showMenuScreen"
+        android:src="@drawable/home_icon" />
+
+    <Button
+        android:id="@+id/btn_OrdersCart"
+        style="@style/btn_header"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/img_home"
+        android:background="@drawable/orders_cart_bg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="@string/cart" />
+
+    <Button
+        android:id="@+id/btn_OrdersHistory"
+        style="@style/btn_header"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_OrdersCart"
+        android:background="@drawable/orders_header_btn_bg"
+        android:gravity="center|center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/history" />
+
+    <Button
+        android:id="@+id/btn_OrdersSuggested"
+        style="@style/btn_header"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/btn_OrdersHistory"
+        android:background="@drawable/orders_header_btn_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:text="@string/suggested_orders" />
+    \    
+
+    <LinearLayout
+        android:id="@+id/inventory_hist_search_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_logo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/img_home"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/img_fromdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/date_bg_reports"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/fromdate"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/img_todate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/date_bg_reports"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/todate"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone" >
+        </EditText>
+
+        <Button
+            android:id="@+id/img_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/go_btn_bg_inventoryhistory"
+            android:text="@string/go"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+   android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/layout_order_header" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pnl_Header"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/client_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pnl_Header"
+            layout="@layout/view_row" />
+
+        <include
+            android:id="@+id/pnl_row_header"
+            layout="@layout/layout_orders_history_lables" >
+        </include>
+
+        <ListView
+            android:id="@+id/lv_OrdersHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+             android:divider="@color/inventory_view"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/list_selector"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

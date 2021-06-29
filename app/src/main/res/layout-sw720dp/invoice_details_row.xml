@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_barcode"
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black_color"
+        android:textStyle="normal"
+        android:text="@string/product" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        android:id="@+id/txt_count"
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:textColor="@color/black_color"
+        android:textStyle="normal"
+        android:text="@string/menus_count" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/customer_view" />
+
+    <TextView
+        android:id="@+id/txt_uom"
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:textColor="@color/black_color"
+        android:textStyle="normal"
+        android:text="@string/csales_uom" />
+   
+</LinearLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/inventory_history_header" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/nexpage_layout"
+        android:layout_below="@+id/pnl_Header"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/client_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pnl_Header"
+            layout="@layout/view_row" />
+
+        <include
+            android:id="@+id/pnl_row_header"
+            layout="@layout/inventory_history_lebal" >
+        </include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black_color" />
+
+        <ListView
+            android:id="@+id/lv_Inventory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/inventory_view"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+    </LinearLayout>
+ <RelativeLayout
+        android:id="@+id/nexpage_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/previas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:text="@string/previas"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

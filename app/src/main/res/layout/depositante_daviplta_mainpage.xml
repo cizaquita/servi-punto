@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_btns"
+        android:layout_below="@+id/header_addClient"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                style="@style/layout_linearlayout"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deposito_daviplate_title"
+                            android:textColor="@color/black_color"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deposito_daviplate_title"
+                            android:textColor="@color/black_color"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tipo_de_documento"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <Spinner
+                                android:id="@+id/spn_select_diposit"
+                                android:layout_width="216dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/inventory_popup_input_dropdown"
+                                android:padding="10dp"
+                                android:prompt="@string/spinner_title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/numero_de_documento"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etxt_number_document"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="0123456789"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:password="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deposito_daviplate_title"
+                        android:textColor="@color/black_color"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:text="@string/celular"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/edtxt_celular"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:digits="0123456789"
+                                    android:inputType="number"
+                                    android:maxLength="10" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dereccion"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_dereccion"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:ems="10"
+                                    android:imeOptions="flagNoExtractUi"
+                                    android:maxLength="50"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ciudad_munisipio"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_ciudad_munisipio"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:digits="0123456789"
+                                    android:inputType="number"
+                                    android:maxLength="10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/numbres"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_numberDeposit"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:maxLength="40" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/apellidos"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_apellidos"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:maxLength="40" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_2"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_consultar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/recharge_menu_modules_innerbtn"
+                        android:text="@string/consultar"
+                        android:textColor="@color/white_color" />
+
+                    <Button
+                        android:id="@+id/btn_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/recharge_menu_modules_innerbtn"
+                        android:text="@string/crear"
+                        android:textColor="@color/white_color" />
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/recharge_menu_modules_innerbtn"
+                        android:text="@string/edit"
+                        android:textColor="@color/white_color" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/layout_linearlayout"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_rashmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/destino"
+                            android:textColor="@color/black_color"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/departameno"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_width="52dp"
+                                    android:text="example"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="vertical" >
+
+                                <EditText
+                                    android:id="@+id/departameno"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:digits="0123456789"
+                                    android:ems="10"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:maxLength="10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_destino"
+                            android:textColor="@color/black_color"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/numero_daviplata_destino"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_number_daviplate"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:digits="0123456789"
+                                    android:inputType="number"
+                                    android:maxLength="10" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/txt_dialog_inv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/confirm"
+                                    android:textColor="@color/black_color"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etxt_confirmDeposito"
+                                    style="@style/etxt_dialog_inv"
+                                    android:layout_width="wrap_content"
+                                    android:digits="0123456789"
+                                    android:inputType="number"
+                                    android:maxLength="10" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valor2"
+                        android:textColor="@color/black_color"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/valor_del_giro"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etxt_valor_de_gir"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_width="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="11" />
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:text="@string/total_efectivo"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etxt_total_efectivo"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_width="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="11" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/txt_dialog_inv"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/comision_del_giro"
+                                android:textColor="@color/black_color"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etxt_cmision_del_giro"
+                                style="@style/etxt_dialog_inv"
+                                android:layout_width="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="11" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_rashmi"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_confirm"
+                        style="@style/recharge_bttons"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/cash_button"
+                        android:text="@string/reg_cnfrm" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        style="@style/recharge_bttons"
+                        android:background="@drawable/new_cancel"
+                        android:text="@string/reg_cancel" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

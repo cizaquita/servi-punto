@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/addproduct_header_panel" >
+    </include>
+
+    <TextView
+        android:id="@+id/header_addSupplier"
+        style="@style/inner_header_title"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pnl_Header"
+        android:background="@color/inventory_tab"
+        android:text="@string/product_info" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_btns"
+        android:layout_below="@+id/header_addSupplier" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/barcode"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodCode"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="20" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/name"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodName"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/txt_purchaseprice"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodPurPrice"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/txt_sellingprice"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodSellPrice"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/minimum_amount"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodMinAmount"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/txt_uom"
+                    android:textColor="@color/black_color" />
+
+                <Spinner
+                    android:id="@+id/spn_uom"
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/inventory_input_filed_dropdown"
+                    android:inputType="number"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/lbl_vat"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_prodVat"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/group"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_group"
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/etxt_disable"
+                    android:enabled="false"
+                    android:imeOptions="flagNoExtractUi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/line"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_line"
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/etxt_disable"
+                    android:enabled="false"
+                    android:imeOptions="flagNoExtractUi" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/lbl_supplier"
+                    android:textColor="@color/black_color" />
+
+                <Spinner
+                    android:id="@+id/spn_supplier"
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/inventory_input_filed_dropdown"
+                    android:imeOptions="flagNoExtractUi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/subgroup"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_subgroup"
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/etxt_disable"
+                    android:enabled="false"
+                    android:imeOptions="flagNoExtractUi" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/lbl_supplier"
+                    android:textColor="@color/black_color"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_Addsupplier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/inventory_add_supplier_bg"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="@string/add_supplier"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/lbl_discount"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_discount"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/group"
+                    android:textColor="@color/black_color"
+                    android:visibility="invisible" />
+
+                <EditText
+                    style="@style/etxt_supplier"
+                    android:background="@drawable/etxt_disable"
+                    android:enabled="false"
+                    android:imeOptions="flagNoExtractUi"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_Submit"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/cash_button"
+            android:text="@string/btn_add"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/btn_Submit"
+            android:background="@drawable/new_cancel"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white_color" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/header_addSupplier"
+        layout="@layout/view_row" />
+
+</RelativeLayout>

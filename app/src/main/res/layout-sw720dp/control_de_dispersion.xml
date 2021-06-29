@@ -1,0 +1,448 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <include
+        android:id="@+id/pnl_cashregisterHeader"
+        layout="@layout/control_de_dispersionheader" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_cashregisterHeader"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:id="@+id/ll_frstcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/client_list_view"
+        android:layout_marginLeft="@dimen/layout_paddingleft"
+        android:layout_marginRight="@dimen/layout_paddingleft"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/customer_tab"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/Programacion_acept_title"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/collection_border"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/white_trans"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:background="@drawable/collection_border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:text="@string/aceptacion"
+                        android:textColor="@color/black_color"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/valor"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_acceptance_value"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/centro_de_acopio"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_acceptance_collection"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/medio"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_acceptance_medio"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/date"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_acceptance_date"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_acceptance_cnfrm"
+                            style="@style/recharge_bttons"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/dispersion_acepterbtn" />
+
+                        <Button
+                            android:id="@+id/btn_acceptance_cncl"
+                            style="@style/recharge_bttons"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/new_cancel"
+                            android:text="@string/dispersion_rechazarbtn" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:background="@drawable/collection_border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:text="@string/devolucion"
+                        android:textColor="@color/black_color"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/valor"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_return_value"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/centro_de_acopio"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_return_collection"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/medio"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_return_medio"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:text="@string/date"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_return_date"
+                            style="@style/txt_dialog_inv"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_return_cnfrm"
+                            style="@style/recharge_bttons"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/dispersion_acepterbtn" />
+
+                        <Button
+                            android:id="@+id/btn_return_cncl"
+                            style="@style/recharge_bttons"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/new_cancel"
+                            android:text="@string/dispersion_rechazarbtn" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_cancel"
+                android:text="@string/btn_salir"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/client_list_view"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/pnl_row_header"
+            layout="@layout/reports_details_header_label" >
+        </include>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_color" />
+
+        <ListView
+            android:id="@+id/lv_ReportDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:clickable="false"
+            android:divider="@color/customer_view"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,507 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_popup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/sale_tab"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/collection__title"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_desc"
+            android:padding="10dp"
+            android:src="@drawable/cancel_btn_bg" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_purchaseprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_popup_header"
+        android:background="@color/sale_tab"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="@string/collection_text_title"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_purchaseprice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_purchaseprice"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/collection_text_title"
+        android:textColor="@color/black_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_purchaseprice1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_h_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/collection_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                             android:id="@+id/txtxt_nit"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/cedula_or_nit"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edxt_nit"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                             android:id="@+id/txt_payment_code"
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/PAYMENT_CODE"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_payment_code"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/valor"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_value"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ed_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/date"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/date_picker"
+                            android:gravity="center|left"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/confirmtxt__nit"
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/Confirm_cedula_or_nit"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edxt_confirm__nit"
+                            style="@style/etxt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_confirm_payment_code"
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/Confirm_PAYMENT_CODE"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_confirm_payment_code"
+                            style="@style/etxt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/confirm_value"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.80"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_confirm_value"
+                            style="@style/etxt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="numberPassword"
+                            android:maxLength="9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv_right"
+                            android:text="@string/confirm_value"
+                            android:textColor="@color/text_color_onwhite"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/etxt_cnfmvalue_invisible"
+                            style="@style/etxt_dialog_inv_right"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberPassword"
+                            android:maxLength="20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_transations"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollview"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/regvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/please_type"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edtx_cellular_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_CreateVat2"
+                        style="@style/txt_dialog_inv"
+                        android:layout_weight="1"
+                        android:text="@string/cellular"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.80"
+                        android:text=":"
+                        android:textColor="@color/black_color"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_cellular"
+                        style="@style/etxt_dialog_inv"
+                        android:layout_weight="1"
+                        android:background="@drawable/inventory_popup_input_filed"
+                        android:digits="1234567890"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberPassword"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_CreateExpiryDays2"
+                        style="@style/txt_dialog_inv"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/confirm_mobile"
+                        android:textColor="@color/text_color_onwhite"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/txt_dialog_inv"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.80"
+                        android:text=":"
+                        android:textColor="@color/black_color"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_confirm_cellular"
+                        style="@style/etxt_dialog_inv"
+                        android:layout_weight="1"
+                        android:background="@drawable/inventory_popup_input_filed"
+                        android:digits="1234567890"
+                        android:inputType="numberPassword"
+                        android:maxLength="10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/btn_collection_cnfm"
+                    style="@style/recharge_bttons"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/cash_button"
+                    android:text="@string/reg_cnfrm"
+                    android:textColor="@color/white_color" />
+
+                <Button
+                    android:id="@+id/btn_collection_refresh"
+                    style="@style/recharge_bttons"
+                    android:layout_marginLeft="48dp"
+                    android:layout_toRightOf="@+id/btn_collection_cancel"
+                    android:background="@drawable/recharge_menu_modules_innerbtn"
+                    android:text="@string/collection_refresh"
+                    android:textColor="@color/white_color" />
+
+                <Button
+                    android:id="@+id/btn_collection_cancel"
+                    style="@style/recharge_bttons"
+                    android:layout_marginLeft="47dp"
+                    android:layout_toRightOf="@+id/btn_collection_cnfm"
+                    android:background="@drawable/new_cancel"
+                    android:text="@string/reg_cancel"
+                    android:textColor="@color/white_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

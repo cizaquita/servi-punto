@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/header_logo"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/m_order" />
+
+    <TextView
+        style="@style/header_title"
+        android:layout_toRightOf="@+id/img_logo"
+        android:text="@string/orders"
+        android:textColor="@color/black_color" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        style="@style/header_home_icon"
+        android:contentDescription="@string/img_content_desc"
+        android:onClick="showMenuScreen"
+        android:src="@drawable/home_icon" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/img_home" >
+
+        <EditText
+            android:id="@+id/etxt_OrderSearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            android:hint="@string/hint_search"
+            android:maxLength="15"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+        <ImageView
+            android:id="@+id/img_OrderSearchicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etxt_OrderSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/search_btn_bg" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_OrdersCloseicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etxt_OrderSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/close_icon_bg"
+            android:visibility="invisible" >
+        </ImageView>
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

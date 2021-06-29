@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/daviplata_payment_header" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:id="@+id/ll_frstcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/client_list_view"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/layout_paddingleft"
+        android:layout_marginRight="@dimen/layout_paddingleft"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/sale_tab"
+            android:padding="10dp"
+            android:text="@string/davip_text"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_trans"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                     android:background="@drawable/collection_border"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lay_remove_silver1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_transaction_data"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/etxt_remove_the_silver1"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left|fill_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_remove_the_silver"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etxt_remove_the_silver"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left|fill_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_get_the_money"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etxt_sent_remove_the_silver"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="6" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left|fill_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_value_to_remove"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etxt_value_to_remove"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left|fill_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/daviplata_Key_selling"
+                            android:textColor="@color/black_color"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/txt_dialog_inv"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.40"
+                            android:text=":"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etxt_key_selling"
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:digits="1234567890"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:password="true" />
+
+                        <EditText
+                            style="@style/etxt_dialog_inv"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_cellularCancel"
+                            style="@style/recharge_bttons"
+                            android:background="@drawable/new_cancel"
+                            android:onClick="showMenuScreen"
+                            android:text="@string/reg_cancel" />
+
+                        <Button
+                            android:id="@+id/btn_cellularSave"
+                            style="@style/recharge_bttons"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/cash_button"
+                            android:text="@string/reg_cnfrm" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sales_row"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_subpanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.62"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_SalesAdpaDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/sales_delete" />
+
+        <TextView
+            android:id="@+id/txt_SaleAdpaProduct"
+            style="@style/sales_txt_headers"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/black_color"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/sale_view" />
+
+    <TextView
+        android:id="@+id/txt_SaleAdpaPrice"
+        style="@style/sales_txt_headers"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black_color"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/sale_view" />
+
+    <TextView
+        android:id="@+id/txt_SaleAdpaQty"
+        style="@style/sales_txt_headers"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black_color"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/sale_view" />
+
+    <TextView
+        android:id="@+id/txt_SaleAdpaUnits"
+        style="@style/sales_txt_headers"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black_color"
+        android:textStyle="normal" />
+
+</LinearLayout>

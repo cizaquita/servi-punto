@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/iv_banner_row_image"
+        style="@style/header_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/menuitem_shop_bg" />
+
+    <TextView
+        android:id="@+id/iv_promotion_des"
+        style="@style/txt_promotion_item"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/iv_banner_row_image"
+        android:layout_alignLeft="@+id/iv_banner_row_image"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textColor="@color/black_color"
+         android:maxLines="2" />
+    <!--
+    <ImageView
+        android:id="@+id/iv_banner_row_image"
+        style="@style/header_logo"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/menuitem_shop_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/iv_banner_row_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_banner_row_image"
+        android:background="@android:color/transparent"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/iv_promotion_des"
+            style="@style/txt_promotion_item"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textColor="@color/white_color"/>
+    </LinearLayout> -->
+
+</RelativeLayout>

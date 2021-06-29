@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sales_row"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        
+         <TextView
+            android:id="@+id/txt_Enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/etxt_Startdate"
+            android:text="@string/todate"
+            android:textColor="@color/black_color"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxt_Enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_Enddate"
+            android:background="@drawable/date_bg_reports"
+            android:contentDescription="@string/img_content_desc"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginLeft="10dp"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/txt_Startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/fromdate"
+            android:textColor="@color/black_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxt_Startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_Startdate"
+            android:background="@drawable/date_bg_reports"
+            android:contentDescription="@string/img_content_desc"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginLeft="10dp"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+       
+    </RelativeLayout>
+
+</RelativeLayout>

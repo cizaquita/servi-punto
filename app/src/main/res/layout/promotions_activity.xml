@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_parent_relativelayout"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_Header"
+        layout="@layout/layout_promotion_header" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_Header"
+        layout="@layout/view_row" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/client_list_view"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/pnl_row_header"
+            layout="@layout/layout_promotion_label" >
+        </include>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_color" />
+
+        <GridView
+            android:id="@+id/gv_Promotions"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white_color"
+            android:clickable="false"
+            android:divider="#00bc65"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:layout_margin="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

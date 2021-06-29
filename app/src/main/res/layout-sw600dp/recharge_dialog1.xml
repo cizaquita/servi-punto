@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  android:background="@color/white_color"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_popup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/sale_tab"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="@string/cnfm_data"
+            android:textColor="@color/white_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_content_desc"
+            android:padding="10dp"
+            android:src="@drawable/cancel_btn_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_popup_header"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_paquetigo"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operater"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_operator"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtnumber"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/number"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_number"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/regvalue"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recharge_value"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_reg_val"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_assistance1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/asstvalue"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/assistance_value"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ass_val"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_key"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txtkey"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/assistance_value"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_keyvalue"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_celular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txtcelular"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/assistance_value"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_celular_no"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/layout_editkey_barcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/valor"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_key_value_val"
+                     style="@style/etxt_dialog_inv"
+                    android:layout_weight="1"
+                    android:inputType="phone" 
+                    android:password="true"
+                    android:digits="1234567890."
+                    android:maxLength="10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_editkey"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/edit_txtkey"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/key"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_key_value"
+                    style="@style/etxt_dialog_inv"
+                    android:layout_weight="1"
+                    android:digits="1234567890."
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:password="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_cellNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/edit_txtcellnumber"
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/key"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/txt_dialog_inv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:text=":"
+                    android:textColor="@color/text_color_onwhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cell_number"
+                    style="@style/etxt_dialog_inv"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:maxLength="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_reg_cancel"
+            style="@style/recharge_bttons"
+            android:background="@drawable/new_cancel"
+            android:text="@string/reg_cancel" />
+
+        <Button
+            android:id="@+id/btn_reg_cnfm"
+            style="@style/recharge_bttons"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cash_button"
+            android:text="@string/reg_cnfrm" />
+    </LinearLayout>
+
+</RelativeLayout>

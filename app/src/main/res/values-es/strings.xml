@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="delivery_history">Histórico de Delivery</string>
+    <string name="chargeDelivery">Cargar al Delivery</string>
+    <string name="chargeCustomer">Cargar al Cliente</string>
+    <string name="txttelephone">Teléfono</string>
+    <string name="title_delivery">Delivery</string>
+    <string name="add_delivery">Crear Delivery</string>
+
+    <string name="terms">Al accesar a esta aplicación usted está aceptando los</string>
+    <string name="terms_and_conditions">Términos y condiciones.</string>
+    <string name="terms_and_conditions_acceptance">Acepto los términos y condiciones.</string>
+    <string name="sup_name">Nombre Proveedor</string>
+    <string name="rep_cedula">Cedula</string>
+    <string name="lottery_title">Lotería</string>
+    <string name="loteria_dialog1">Confirmar Datos</string>
+    <string name="loteria_dialog2">Confirmar</string>
+    <string name="invalidnit_n">Debe ingresar </string>
+    <string name="invalidnit1_n">Debe ingresar la confirmación de </string>
+    <string name="invalidnit2_n">El valor de  </string>
+    <string name="invalidnit3_n">no coincide con su confirmación </string>
+    <string name="value_daviplata">Value</string>
+    <string name="document_type">Document Type</string>
+    <string name="cellular_daviplata">Cellular</string>
+    <string name="names">Name</string>
+    <string name="surname">Surname</string>
+    <string name="address_daviplata">Address</string>
+    <string name="city_town">City/Town</string>
+    <string name="department">Department</string>
+    <string name="daviplata_destination">Daviplata Destination</string>
+    <string name="destination_number">Daviplata Destination Number</string>
+    <string name="confirm_daviplata">Confirm</string>
+    <string name="value_of_rotation">Value of rotation</string>
+    <string name="turning_commission">Turning Commission</string>
+    <string name="total_cash">Total Cash</string>
+    <string name="create">Create</string>
+    <string name="edit_daviplata">Edit</string>
+    <string name="depositor_update">Depositor update</string>
+    <string name="create_new_depositor">Create New Depositor</string>
+    <string name="expedition_date">Expedition Date</string>
+    <string name="first_Name">First Name</string>
+    <string name="check_document">Check document</string>
+    <string name="second_Name">Second_Name</string>
+    <string name="second_Surname">Second Surname</string>
+    <string name="check_Cell">Check Cell</string>
+    <string name="City">City</string>
+    <string name="update">Update</string>
+    <string name="acceptency_message">Entrega de Efectivo para pagos, este comprobante indica la aceptacion de efectivo en el comercio autorizado para pagos</string>
+    <string name="devolucion_message">Devolucion de Efectivo para pagos, este comprobante indica la devolucion del efectivo en el comercio autorizado para pagos. </string>
+    <string name="centro_efectivo_message">Entrega de Efectivo para pagos, este comprobante indica la aceptacion de efectivo en el comercio autorizado para pagos</string>
+    <string name="daviplata_header">Deposito Daviplata</string>
+    <string name="deposino">Destination</string>
+    <string name="email_and_confirmation_are_defferent">La confirmación de correo electrónico no corresponde </string>
+    <string name="entervalue">Enter a value</string>
+
+
+
+
+    <string name="recharges">Recargas</string>
+    <string name="app_name">MiCaja</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="img_content_desc"></string>
+    <string name="user_login_per">Lo sentimos, usted no tiene permisos</string>
+    <string name="text_from_strings">Text From Strings</string>
+    <string name="hint_user_name">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="login">Enviar</string>
+    <string name="fileds_not_blank">Los campos no pueden estar vacíos</string>
+    <string name="invalid_credentials">Credenciales Inválidas</string>
+    <string name="english">English</string>
+    <string name="spanish">Español</string>
+    <string name="portuguese">Portugués</string>
+    <string name="select_language">Seleccionar Idioma</string>
+    <string name="hint_search">Buscar</string>
+    <string name="back">Regresar</string>
+    <string name="exitmsg">Presione dos veces para salir</string>
+
+    <!-- Menu -->
+
+    <string name="shopopne">Tienda Abierta</string>
+    <string name="shopclose">Tienda Cerrada</string>
+    <string name="client">Clientes</string>
+    <string name="suppliers">Proveedores</string>
+    <string name="inventory">Inventario</string>
+    <string name="cash">Caja</string>
+    <string name="sales">Ventas</string>
+    <string name="orders">Pedidos</string>
+    <string name="reports">Informes</string>
+    <string name="promotions">Promociones</string>
+    <string name="menus">Menús</string>
+    <string name="dish_name_exist">El nombre del plato ya existe. Por favor introduzca otro nombre</string>
+    <string name="information">Informes</string>
+    <string name="recharge">Recargas</string>
+    <string name="box">Caja</string>
+    <string name="c_banking">Corresponsal Bancario</string>
+    <string name="cabin_calls">Cabina de llamadas</string>
+    <string name="micro_insurance">Micro Seguros</string>
+    <string name="micro_credit">Micro Crédito</string>
+    <string name="pa_quetiogs">Paquetigos</string>
+    <string name="password">Contraseña</string>
+
+    <!-- Client -->
+
+    <string name="title_client">Clientes</string>
+    <string name="name">Nombre *:</string>
+    <string name="txtname">Nombre </string>
+    <string name="payment">Abono</string>
+    <string name="debt">Deuda</string>
+    <string name="date">Fecha</string>
+    <!-- <string name="pay">Abonar</string> -->
+    <string name="pay">Abono</string>
+    <string name="lendmoney">Prestar Dinero</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="email_title">Correo Electrónico</string>
+    <string name="edit">Editar</string>
+    <string name="add_client">Crear cliente</string>
+    <string name="identitynum">Número de identificación *:</string>
+    <string name="telephone">Teléfono*:</string>
+    <string name="address">Dirección *: </string>
+    <string name="txtemail">Correo electrónico:</string>
+    <string name="gender">Género *:</string>
+    <string name="btn_add">Enviar</string>
+    <string name="btn_close">Cerrar establecimiento</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="history">Histórico</string>
+    <string name="spn_select">Ordenar por</string>
+    <string name="spn_date">Ordenar por fecha</string>
+    <string name="spn_payment">Ordenar por Deuda</string>
+    <string name="search_warning">La búsqueda debe tener mínimo 3 caracteres</string>
+    <string name="male">Masculino</string>
+    <string name="female">Femenino</string>
+    <string name="title_createclient">Información del cliente</string>
+    <string name="select_gender">Seleccione el género</string>
+    <string name="invalid_email">Correo eléctrónico inválido</string>
+    <string name="initialdebt">Deuda inicial:</string>
+    <!-- <string name="txt_initialdebt">Deuda inicial</string> -->
+    <string name="txt_initialdebt">Importe</string>
+    <string name="actualdebt">Deuda Actual:</string>
+    <string name="txt_actualdebt">Deuda Actual</string>
+
+    <!-- Client Pay -->
+
+    <string name="pay_title">Registrar abono</string>
+    <string name="balance">Saldo</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit_client">Editar cliente</string>
+    <string name="client_history">Histórico de cliente</string>
+    <string name="pay_warn_msg">Por favor ingresar un valor válido</string>
+    <string name="validate_fileds"> Por favor seleccione el motivo </string>
+    <string name="txt_amount">Valor:</string>
+    <string name="client_debt_pay">Abono</string>
+    <string name="update_msg">Modificación exitosa</string>
+    <string name="lendmoney_pay">Prestar dinero</string>
+
+    <!-- Suppliers -->
+
+    <string name="title_suppliers">Proveedores</string>
+    <string name="add_supplier">Crear proveedor</string>
+    <string name="edit_supplier">Editar proveedor</string>
+    <string name="label_supp_header">Información del proveedor</string>
+    <string name="supp_name">Nombre del proveedor:*</string>
+    <string name="supp_nit">RNC:*</string>
+    <string name="supp_businessdays">Días de visita:*</string>
+    <string name="supp_freq_visit">Frecuencia de visita:*</string>
+    <string name="weekly">Semanal</string>
+    <string name="fortnightly">Quincenal</string>
+    <string name="monthly">Mensual</string>
+    <string name="alert">Alerta</string>
+    <string name="ok">Aceptar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="fail">Error</string>
+    <string name="failure">Error</string>
+    <string name="save_messgae">¿Desea guardar los datos seleccionados?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="added_success">Adición exitosa</string>
+    <string name="updated_success">Actualización correcta</string>
+    <string name="not_added">No se pudo adicionar. Por favor revisar</string>
+    <string name="enter_name">Ingrese el nombre</string>
+    <string name="enter_nit">Ingrese el RNC</string>
+    <string name="enter_email">Ingrese el correo electrónico</string>
+    <string name="enter_address">Ingrese la dirección</string>
+    <string name="enter_phonenum">Ingrese el número teléfonico</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wedneday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+    <string name="nodata">No hay resultados</string>
+    <string name="week_mon">L</string>
+    <string name="week_tue">M</string>
+    <string name="week_wed">M</string>
+    <string name="week_thu">J</string>
+    <string name="week_fri">V</string>
+    <string name="week_sat">S</string>
+    <string name="week_sun">D</string>
+    <string name="contactname">Nombre del Contacto:</string>
+    <string name="contactnum">Teléfono Celular:</string>
+    <string name="select">Seleccionar</string>
+    <string name="select_freqvisit">Seleccione la frecuencia de visita</string>
+    <string name="select_days">Seleccionar Días de visita</string>
+
+    <!-- Shop Open or close -->
+
+    <string name="title_shopopen">Abrir o Cerrar Comercio</string>
+    <string name="shop_decription">Descripción de los movimientos</string>
+    <string name="shop_income">Ingresos</string>
+    <string name="shop_expenses">Gastos</string>
+    <string name="shop_datetime">Fecha\u0026Hora:</string>
+    <string name="hour">Hora</string>
+    <string name="shop_dialog_title">Dinero en caja</string>
+    <string name="openingbal">Saldo inicial</string>
+    <string name="cashsales">Ventas en efectivo</string>
+    <string name="cardsales">Ventas con tarjeta</string>
+    <string name="deposits">Depósitos</string>
+    <string name="payments">Abonos</string>
+    <string name="cashpurchases">Compras de contado</string>
+    <string name="creditpurchases">Compras a crédito</string>
+    <string name="withdrawls">Retiros/Préstamos a Clientes</string>
+    <string name="total">Total</string>
+    <string name="totalcash">Total efectivo</string>
+    <string name="finalbalance">Saldo final</string>
+    <string name="closebalance">Saldo final</string>
+    <string name="close_dialog_title">Confirmar</string>
+    <string name="close_msg">¿Desea cerrar el establecimiento?</string>
+    <string name="close_success">Establecimiento cerrado con éxito</string>
+    <string name="network_msg">Red no disponible, por favor revise su conexión</string>
+    <string name="network_sync_msg">Los datos no fueron registrados en el servidor, compruebe la conexión a la Red</string>
+    <string name="sync_error_msg">Sincronización no Disponible</string>
+    <string name="shop_name_label">Establecimiento : </string>
+    <string name="shop_date_label">Fecha de Apertura : </string>
+    <string name="duplicate_records">Registro duplicado</string>
+    
+    <string name="customer_duplicate_record_start">El cliente con identificación</string>
+    <string name="customer_duplicate_record_end">ya existe en la tienda</string>
+    
+
+    <!-- Cash -->
+
+    <string name="title_cash">Caja</string>
+    <string name="cash_moneybox">Dinero en caja</string>
+    <string name="cash_type">Tipo</string>
+    <string name="cash_decription">Descripción de movimiento</string>
+    <string name="cash_datetime">Fecha\u0026Hora</string>
+    <string name="cash_valuemovement">Valor movimiento</string>
+    <string name="btn_cashWithdraw">Retiro de caja</string>
+    <string name="btn_cashdeposit">Depósito de caja</string>
+    <string name="cash_storeopen">Abrir establecimiento</string>
+    <string name="cash_withdrawl">Retiro de caja</string>
+    <string name="pay_clients">Abono de cliente</string>
+    <string name="cash_deposit">Depósito</string>
+    <string name="cash_orderbuy"> Pagar en efectivo orden de compra</string>
+    <string name="sale_clients">Venta a cliente</string>
+    <string name="cash_lend">Préstamo de cliente</string>
+    <string name="cash_warn_msg">Por favor ingrese todos los campos</string>
+
+    <!-- Inventory -->
+
+    <string name="title_inventory">Inventario</string>
+    <string name="inv_productslist">Productos listados:</string>
+    <string name="inv_provider">Proveedor</string>
+    <string name="inv_adjustment">Ajuste de inventario</string>
+    <string name="inv_history">Historial</string>
+    <string name="inv_recieve">Recibir</string>
+    <string name="inv_quantity">Monto</string>
+    <string name="product">Producto</string>
+    <string name="inv_prodcode">Código del producto</string>
+    <string name="inv_prodrname">Nombre del producto</string>
+    <string name="inv_utilityvalue">Ganancia</string>
+    <string name="adjustment">Ajuste</string>
+    <string name="actual_quantity">Cantidad actual</string>
+    <string name="physical_inventory">Inventario físico</string>
+    <string name="adjust">Ajustar</string>
+    <string name="spn_all">Todos</string>
+    <string name="spn_exhausted">Agotado</string>
+    <string name="select_supplier">Seleccione un proveedor</string>
+    <string name="select_provider">Seleccione un proveedor</string>
+    <string name="msg_supplier">Por favor seleccione un proveedor</string>
+    <string name="title_inventoryadjust">Ajustar inventario</string>
+    <string name="txt_uom">Unidad de Medida</string>
+    <string name="txt_supplier">Proveedor</string>
+    <string name="inv_adjust_qty_msg">Cantidad debe ser menor a la cantidad del producto en Inventario</string>
+    <string name="orders_invoice">Número de factura</string>
+
+    <!-- Add Product -->
+
+    <string name="barcode">Código de barras *:</string>
+    <string name="lbl_quantity">Cantidad *:</string>
+    <string name="quantity">Monto</string>
+    <string name="purchaseprice">Valor al Precio de compra</string>
+    <string name="lbl_purchaseprice">Valor al Precio de compra *:</string>
+    <string name="lbl_sellingprice">Valor al Precio de Venta *:</string>
+    <string name="sellingprice">Valor al Precio de Venta</string>
+    <string name="lbl_vat">ITBIS(%)</string>
+    <string name="lbl_discount">Descuento(%) :</string>
+    <string name="vat">ITBIS</string>
+    <string name="provider">Proveedor</string>
+    <string name="add">Adicionar</string>
+    <string name="add_product">Adicionar producto</string>
+    <string name="product_info">Información del producto</string>
+    <string name="group">Grupo *: </string>
+    <string name="line">Línea *:</string>
+    <string name="createproduct">Crear producto</string>
+    <string name="editproduct">Editar producto</string>
+    <string name="product_exists">Producto existe en el inventario.</string>
+    <string name="lbl_supplier">Proveedor *:</string>
+    <string name="error_barcode">Código de barras Es :</string>
+
+    <!-- Recieve -->
+
+    <string name="next">Siguiente</string>
+    <string name="lablel_name">Nombre</string>
+    <string name="orderend">Finalizar pedido</string>
+    <string name="ordercancel">Cancelar pedido</string>
+    <string name="recive">Recibir pedido</string>
+
+    <!-- Cash -->
+
+    <string name="value">Valor</string>
+    <string name="reason">Motivo</string>
+
+    <!-- Sales -->
+
+    <string name="sales_product">Producto</string>
+    <string name="sales_price">Precio</string>
+    <string name="sales_quantity">Monto</string>
+    <string name="sales_units">Unidad de Medida</string>
+    <string name="sales_total_items">Artículos en total :</string>
+    <string name="sales_sub_total">Total parcial :</string>
+    <string name="sales_vat">ITBIS :</string>
+    <string name="sales_discount">Descuento :</string>
+    <string name="sales_total_amount">Total Compra :</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="clear">C</string>
+    <string name="discount_opt">Descuento</string>
+    <string name="invoice_opt">Ajuste de factura</string>
+    <string name="end_sale">Finalizar venta</string>
+    <string name="cancel_sale">Cancelar venta</string>
+    <string name="sales_custome">Cliente :</string>
+    <string name="sales_phone">Teléfono :</string>
+    <string name="sales_id">RNC: </string>
+    <string name="sales_credit">Deuda :</string>
+    <string name="enter_valid_value">Por Favor ingrese un valor válido</string>
+    <string name="amount">Monto :</string>
+    <string name="invalid_discount">Descuento inválido</string>
+    <string name="sales_delete">¿Está seguro de eliminar el Producto?</string>
+    <string name="delete">Eliminar</string>
+    <string name="sales_total_debt">Deuda Total:</string>
+    <string name="sales_total_purchase">Total Factura: </string>
+    <string name="uom">Unidad de medida</string>
+    <string name="sales_uom">Unidad de medida :</string>
+    <string name="select_units">Seleccione la unidad de medida</string>
+    <string name="sales_cancel_msg">¿Desea cancelar la venta?</string>
+    <string name="method_of_payment">Método de pago :</string>
+    <string name="pay_amount">Valor del pago :</string>
+    <string name="debt_amount">Valor restante de la factura :</string>
+    <string name="invoice_no">Número de factura :</string>
+    <string name="invalid_sales_payment_msg">El valor del pago y el valor de la deuda debe ser igual al valor de la venta</string>
+
+    <!-- History -->
+
+    <string name="fromdate">Desde la fecha</string>
+    <string name="todate">Hasta la fecha</string>
+    <string name="products">Productos</string>
+    <string name="profitability">Rentabilidad</string>
+    <string name="quantitysold">Cantidad vendida</string>
+    <string name="txt_quantity">Cantidad</string>
+    <string name="reporttype">Tipos de informes</string>
+    <string name="order_received">Pedidos recibidos</string>
+    <string name="in_progress">En curso</string>
+
+    <!-- Promotions -->
+
+    <string name="providername">Nombre del proveedor:*</string>
+    <string name="promotionname">Detalle de la promoción</string>
+
+    <!-- Reports -->
+
+    <string name="servi_report">Informes Tienda </string>
+    <string name="cashbox_report">Informes MyCashBox </string>
+    <string name="title_reports">Informes</string>
+    <string name="reportslist">Lista de informes</string>
+    <string name="report1">Productos por rentabilidad</string>
+    <string name="report2">Producto más vendido</string>
+    <string name="report3">Rentabilidad por proveedor</string>
+    <string name="report4">Producto más vendido</string>
+    <string name="report5">Día más rentable</string>
+    <string name="report6">Histórico de caja</string>
+    <string name="report7">Cuentas por cobrar</string>
+    <string name="report8">Cuentas por pagar</string>
+    <string name="report9">Valor del inventario en el establecimiento</string>
+    <string name="select_date">Por favor seleccione la fecha inicial y final</string>
+    <string name="profit">Rentabilidad Acumulada</string>
+    <string name="supp_code">Proveedor</string>
+
+    <!-- Orders -->
+
+    <string name="cart">Carro</string>
+    <string name="suggested_orders">Pedido sugerido</string>
+    <string name="suggested_price">Precio sugerido</string>
+    <string name="orders_status">Estado</string>
+    <string name="orders_price">Precio</string>
+    <string name="add_to_cart">Adicionar al carro</string>
+    <string name="order_supplier">Proveedores</string>
+    <string name="order_end">Finalizar pedido</string>
+    <string name="order_cancel">Cancelar pedido</string>
+    <string name="order_cancel_msg">¿Desea cancelar este pedido?</string>
+    <string name="order_phone">Teléfono :</string>
+    <string name="order_id">RNC</string>
+    <string name="order_credit">Crédito :</string>
+    <string name="order_end_msg">¿Desea pedir los productos seleccionados?</string>
+    <string name="order_history">Histórico de pedidos</string>
+    <string name="product_added_msg">Producto adicionado al carro!</string>
+    <string name="orders_morepromotions">Ver más promociones</string>
+
+    <!-- ****************************************** Menus ****************************************** -->
+
+    <string name="menus_inven_add">Añadir menús al inventario</string>
+    <string name="menus_inven_qty">Cantidad :</string>
+    <string name="menus_inven_noof_items">No. de artículos :</string>
+    <string name="menus_inven_total_items">Total de artículos No.of :</string>
+    <string name="menus_inven_making_cost">Costo de preparación :</string>
+    <string name="menus_inven_selling_cost">Costo de venta (Por artículo) :</string>
+    <string name="menus_inven_vat">ITBIS% (Sobre el total) :</string>
+    <string name="enter_making_cost">Introduzca preparación costo</string>
+    <string name="invalid_making_cost">Costo  de preparación inválido</string>
+    <string name="invalid_selling_cost">Costo de venta inválido</string>
+    <string name="menus_enter_selling_cost">Costo de venta (por artículo)</string>
+    <string name="menus_enter_vat">ITBIS% (Sobre el total)</string>
+    <string name="enter_qty">Ingrese la cantidad</string>
+    <string name="invalid_qty">Cantidad inválida</string>
+    <string name="invalid_vat">ITBIS% no válido</string>
+    <string name="menus_inven_add_msg">¿Quiere añadir los platos seleccionados al inventario?</string>
+    <string name="menu_inven_succ_msg">Platos adicionados al inventario!.</string>
+    <string name="title_menus">Carta de menú</string>
+    <string name="create_menus_item">Crear plato</string>
+    <string name="add_menus_item">Añadir plato</string>
+    <string name="create_menu">Crear/Actualizar menú</string>
+    <string name="create_menu_titel">Crear menús</string>
+    <string name="edit_Dish_titel">Editar plato</string>
+    <string name="dish_name">Nombre del plato</string>
+    <string name="create_dish_name">Nombre del plato* :</string>
+    <string name="create_noof_items">No de artículos* :</string>
+    <string name="create_dish_price">Precio de venta por artículo* :</string>
+    <string name="create_expiry_days">Caducidad días* :</string>
+    <string name="create_vat">ITBIS%* :</string>
+    <string name="enter_Dish_name">Introduzca el nombre del plato</string>
+    <string name="enter_noof_items">Introduzca No. de artículos</string>
+    <string name="enter_selling_price">Introduzca precio de venta</string>
+    <string name="enter_expiry_days">Introduzca la caducidad de días</string>
+    <string name="enter_vat">Introduzca el ITBIS %</string>
+    <string name="dish_insert_msg">Se ha creado el plato correctamente</string>
+    <string name="dish_edit_msg">Plato actualizado correctamente</string>
+    <string name="menu_insert_msg">El Menú se creó correctamente.</string>
+    <string name="menu_edit_msg">El Menú se actualizó correctamente.</string>
+    <string name="select_dishes">Seleccione los platos.</string>
+    <string name="select_menus_type">Seleccione los tipos de menú</string>
+    <string name="menus_week_days">Días de la semana :</string>
+    <string name="menus_types_weekly">Semanal</string>
+    <string name="menus_types_Occasionally">De vez en cuando</string>
+    <string name="menus_types_daily">Diario</string>
+    <string name="enter_menus_name">Introducir nombre del menú\n</string>
+    <string name="cancel_dish">Cancelar plato</string>
+    <string name="cancel_dish_msg">¿Quieres cancelar?</string>
+    <string name="menus_name">Nombre de los menús</string>
+    <string name="menus_type">Tipos de menú</string>
+    <string name="menus_count">Cantidad</string>
+    <string name="menus_inventory">Inventario</string>
+    <string name="menus_inventory_title">Inventario de menús</string>
+    <string name="menus_add_dish">Añadir Plato</string>
+    <string name="updated_successfully">Actualizado correctamente</string>
+    <string name="menu_filter">Todos</string>
+
+    <!-- ****************************************** SalesActivity ****************************************** -->
+
+    <string name="cleint_occasional">Ocasional</string>
+    <string name="invoice_adjustment">Ajuste de factura</string>
+    <string name="hint_inv_num">Número de factura</string>
+    <string name="sales_succ_msg">Venta realizada</string>
+    <string name="vat_msg">ITBIS no debe superar el 100%</string>
+    <string name="enter_sellprice">Introduzca precio de venta</string>
+    <string name="enter_purprice">Introduzca precio de compra</string>
+    <string name="enter_validvat">Introduzca un valor de ITBIS válido</string>
+    <string name="enter_validphonenum">Debe ingresar un número de celular válido</string>
+    <string name="enter_validcontactnum">Introduzca un número de contacto válido</string>
+    <string name="enter_reason">Introduzca la razón</string>
+    <string name="noproducts_msg">No hay productos añadidos a la cesta</string>
+    <string name="noproduct_exist">El producto ingresado no existe</string>
+    <string name="title_createdish">Crear plato</string>
+    <string name="btnadd">Añadir</string>
+    <string name="shopOpen_msg">Tienda cerrada, por favor abra la tienda</string>
+
+    <!-- ****************************************** Updated Strings ****************************************** -->
+
+    <string name="invalid_name">Nombre inválido</string>
+    <string name="invalid_nit">RNC inválido</string>
+    <string name="enter_supplier_nit">Introduzca el RNC</string>
+    <string name="invalid_address">Dirección inválida</string>
+    <string name="invalid_phonenum">Debe ingresar un número de celular válido</string>
+    <string name="others">Otro</string>
+    <string name="enter_barcode">Ingrese código de barras</string>
+    <string name="invalid_barcode">Código de barras inválido</string>
+    <string name="invalid_purchase">Precio de compra inválido</string>
+    <string name="invalid_selling">Precio de venta inválido</string>
+    <string name="utility">Ganancia</string>
+    <string name="enter_pay_amount">Introduzca el valor a pagar</string>
+    <string name="invalid_pay_amount">Valor a pagar inválido</string>
+    <string name="enter_debt_amount">Introduzca el valor de la deuda </string>
+    <string name="invalid_debt_amount">Valor de la deuda inválida</string>
+    <string name="invalid_total_amount">Precio o cantidad del producto no deben ser cero </string>
+    <string name="select_products">Seleccionar productos</string>
+    <string name="invalid_Dish_name">Nombre del plato inválido</string>
+    <string name="invalid_noof_items">Cantidad de artículos no válida</string>
+    <string name="invalid_selling_price">Precio de venta inválido</string>
+    <string name="invalid_expiry_days">Fecha de expiración invalida</string>
+    <string name="invalid_start_date">Fecha de inicio inválida</string>
+    <string name="invalid_end_date">Fecha de finalización inválida</string>
+    <string name="select_weekdays">Seleccione los días de la semana</string>
+    <string name="client_id_exist">ID del cliente ya existe.</string>
+    <string name="supplier_id_exist">RNC Proveedor ya existe</string>
+    <string name="invalid_payment_msg">El pago es inferior a la valor de la venta.</string>
+    <string name="goods_received">Artículos registrados.</string>
+    <string name="enter_invoice_num">Introduzca el número de factura.</string>
+    <string name="invalid_invoice_num">Número de factura no es válido.</string>
+    <string name="invoice_num">Número de factura</string>
+    <string name="invoice_num_msg">Su número de factura de venta es :</string>
+    <string name="invalid_products_msg">No existen productos.</string>
+    <string name="user_module_msg">No cuenta con los permisos para acceder a este módulo</string>
+    <string name="insufficient_memory">Espacio insuficiente</string>
+    <string name="invalid_occasionally_date">La fecha debe ser superior.</string>
+    <string name="invalid_supplier_nit">RNC inválido</string>
+    <string name="amnt_type">Tipo de Movimiento</string>
+    <string name="amnt_reason">Concepto</string>
+    <string name="amnt">Monto</string>
+    <string name="sup_id">Id del proveedor</string>
+    <string name="profit_date">Fecha</string>
+    <string name="cus_name">Nombre del cliente</string>
+    <string name="cus_id">ID del cliente</string>
+    <!-- <string name="cus_bamount">Saldo</string> -->
+    <string name="cus_bamount">Deuda</string>
+    <string name="supplier_name">Proveedor</string>
+
+    <!-- please wait -->
+
+    <string name="please_wait">Por favor espere</string>
+    <string name="invalid_usernamepass">Usuario y/o contraseña inválidos</string>
+    <string name="sync_success">Sincronización completa</string>
+    <string name="user_logged_in">El usuario ya está conectado</string>
+    <string name="sucessfully_change">Actualización Exitosa</string>
+    <string name="image_view">Ver imágenes</string>
+    <string name="video_view">Ver videos</string>
+    <string name="view_image"><b><u>Ver imágen</u></b></string>
+    <string name="view_video"><b><u>Ver vídeo</u></b></string>
+    <string name="store_code_missing">No se encuetra el código de tienda</string>
+
+    <!-- Printer -->
+
+    <string name="quit">Salir</string>
+    <string name="sureExit">¿Está seguro de salir?</string>
+    <string name="warmTips">Caliente</string>
+    <string name="no_printer">No se encuentra la impresora</string>
+    <string name="have_printer">Impresora:</string>
+    <string name="scan_error">No se encuentra la impresora</string>
+    <string name="scan_success">Dispositivo conectado</string>
+    <string name="message_quit_title">Mensaje</string>
+    <string name="connect_last_printer">Conectando la impresora, un momento por favor ...</string>
+    <string name="print_text">Imprimir texto:</string>
+    <string name="printer">Lista de impresoras:</string>
+
+    <string-array name="printer_list">
+        <item>DASCOM DT- 210</item>
+        <item>DASCOM DT -230</item>
+        <item>SYNCROWN SMP- R381</item>
+        <item>SYNCROWN SMP- R385</item>
+        <item>SYNCROWN SMP- R386</item>
+        <item>SMP- M240</item>
+        <item>SMP- M24L</item>
+        <item>SMP- M250</item>
+        <item>SMP- L258</item>
+        <item>SMP- L380</item>
+        <item>pPT2</item>
+        <item>PPT2 -A</item>
+        <item>PPT2 -UR</item>
+        <item>MPD2</item>
+        <item>MPT8</item>
+        <item>MPT- II</item>
+        <item>MPT- EII</item>
+        <item>MPT- III</item>
+        <item>MPT58</item>
+        <item>MLP2</item>
+        <item>RG- LP58A</item>
+        <item>MPS- III</item>
+        <item>TP801 impresora</item>
+        <item>TP805 impresora</item>
+        <item>TP806 impresora</item>
+        <item>HPRT TP801</item>
+        <item>HPRT TP805</item>
+        <item>HPRT TP806</item>
+        <item>POS80 -A Impresora</item>
+        <item>POS80 -B Impresora</item>
+        <item>POS80 -C de la impresora</item>
+        <item>ELGIN i9</item>
+        <item>POS58A impresora</item>
+        <item>PPTII -A Impresora</item>
+        <item>HPRT LPQ58</item>
+        <item>HPRT LPQ80</item>
+    </string-array>
+
+    <string name="btnConnectBT">Conecte la impresora Bluetooth</string>
+    <string name="btnConnectWiFi">Conecte la impresora WiFi</string>
+    <string name="btnConnectUSB">Conecte la impresora USB</string>
+    <string name="btnConnectLAN">Conecte la impresora LAN</string>
+    <string name="btnprint">Impresión</string>
+    <string name="btnscanbluetooth">Explorar dispositivo Bluetooth</string>
+    <string name="language">Idioma:</string>
+    <string name="connecterr">Error de conexión</string>
+    <string name="connected">Conectado</string>
+    <string name="warmingconnect">Desconecte la impresora</string>
+    <string name="PrintIsNotReady">La impresora no está lista</string>
+    <string name="err_noIP">Por favor configure la Dirección IP</string>
+    <string name="originalsize">Tamaño Original:</string>
+    <string name="minifront">MiniFront :</string>
+    <string name="heightsize">HeightSize :</string>
+    <string name="widthsize">WidthSize :</string>
+    <string name="heightwidthsize">HeightWidthSize :</string>
+    <string name="bold">Negrilla</string>
+    <string name="underline">Línea inferior:</string>
+    <string name="title_paired_devices">Dispositivos vinculados</string>
+    <string name="title_other_devices">Otros dispositivos</string>
+    <string name="button_scan">Buscando ...Bluetooth</string>
+    <string name="none_paired">Dispositivo vinculado</string>
+    <string name="scanning">Buscando ......</string>
+    <string name="select_device">Lista de dispositivos</string>
+    <string name="connect">Conectar</string>
+    <string name="get_device_err">Se recibió mensaje de error de dispositivo :</string>
+    <string name="scan_wifi_title">Se recibe mensaje deerror de dispositivo :</string>
+    <string name="btn_scan_wifi">Buscar WiFi</string>
+    <string name="no_wifi_adhoc">No hay Conexión WiFi</string>
+    <string name="no_printer_object">Por favor conecte la impresora</string>
+    <string name="import_ip_hint">Dirección IP de importación</string>
+    <string name="import_print_text">Importación imprimir texto</string>
+    <string name="btnDisplayRemainingPower">Muestra energía restante</string>
+    <string name="txtRemainingPower">Haga clic en el botón</string>
+    <string name="error_selling_price">El precio de venta es menor que el precio de compra</string>
+    <string name="expired">Producto vencido</string>
+    <string name="breakable">Producto dañado</string>
+    <string name="theft">Robo</string>
+    <string name="physical_recount">Recuento físico</string>
+    <string name="occa_pay_amount">Debe seleccionar algún Cliente o Delivery para ventas a crédito</string>
+    <string name="msj_amount_exceed_totalamount">El valor del pago no debe ser mayor al monto de la factura</string>
+    <string name="menu_name_exist">El Nombre de menú ya existe</string>
+    <string name="inventory_add">Finalizar el ingreso del inventario</string>
+    <string name="go">Ir</string>
+    <string name="product_cancel_msg">¿Quiere Cancelar la adición de éste producto?</string>
+    <string name="product_cancel">Cancelar producto</string>
+    <string name="total_trans">Total de la transacción:</string>
+    <string name="version_error">No se puede conectar el servidor.\n Por favor, vuelva a intentarlo.</string>
+    <string name="version_msg">Comprobando la Versión.\n Un Momento Por Favor.</string>
+    <string name="download_msg">Descargando una nueva version.\n Un momento por favor</string>
+    <string name="client_name">Nombre del cliente:</string>
+    <string name="total_debt">Deuda Total :</string>
+    <string name="actual_balance">Saldo actual :</string>
+    <string name="error_actual_balance">Saldo actual no debe estar vacío</string>
+    <string name="error_balance_msg">El saldo final y el saldo ingresado no son iguales. ¿Desea cerrar el establecimiento de todos modos?</string>
+    <string name="balance_msg">¿Desea cerrar la tienda?</string>
+    <string name="title_recharge">Recarga celular</string>
+    <string name="title_paquetigos">Paquetigos</string>
+    <string name="enter_invoice">Ingrese el número de factura</string>
+    <string name="invalid_invoice">Número de factura inválido</string>
+    <string name="change">Cambio:</string>
+    <string name="price">Precio</string>
+    <string name="inventory_history">Historial del inventario</string>
+    <string name="history_invoice">Número de factura</string>
+    <string name="history_amount">Monto</string>
+    <string name="invoice_details">Detalles de la factura</string>
+    <string name="group_line">Grupo linea </string>
+    <string name="inven_filters">Filtros</string>
+    <string name="group_error_msg">Por favor, introduzca el nombre de Grupo</string>
+    <string name="select_qty">Por favor seleccione la cantidad</string>
+    <string name="dishes">Platos</string>
+    <string name="goods_success">Pedido Realizado</string>
+
+    <!-- Second Phase strings.xml -->
+    <!-- Promotions -->
+
+    <string name="buy_button">Comprar</string>
+    <string name="more_promotions">Ver más promociones</string>
+    <string name="morepromotion_name">Nombre de la promoción</string>
+    <string name="morepromotion_descp">Descripción</string>
+    <string name="morepromotion_supp">Proveedor</string>
+    <string name="morepromotion_sdate">Fecha de inicio</string>
+    <string name="morepromotion_edate">Fecha de finalización</string>
+    <string name="spnfliter_select">Ordenar por</string>
+    <string name="spnfliter_date">Recientes fecha</string>
+    <string name="spnfliter_expire">Promoción expira</string>
+    <string name="spnfliter_products">Producto</string>
+    <string name="spnfliter_barcode">Código de Barras</string>
+    <string name="spnfliter_line">Línea</string>
+    <string name="spnfliter_supplier">Proveedor</string>
+    <string name="spnfliter_group">Grupo</string>
+    <string name="spnfliter_subgroup">Sub grupo</string>
+    <string name="spnfliter_reportline">Línea</string>
+    <string name="report10">Productos Vencidos</string>
+    <string name="expired_barcode">Código de Barras</string>
+    <string name="expired_descp">Descripción de Producto</string>
+    <string name="expired_price">Cantidad de Artículos Vencidos</string>
+    <string name="expired_losers">Valor Total</string>
+    <string name="supp_filters">Tipo de pago</string>
+    <string name="spn_cash">Efectivo</string>
+    <string name="lbl_bank_check">Cheque bancario</string>
+    <string name="spn_dataphone">Datáfono</string>
+    <string name="subgroup">Sub grupo</string>
+    <string name="product_filters">Lista de productos Filtros</string>
+    <string name="subgroup_error_msg">Por favor ingrese nombre de subgrupo</string>
+    <string name="lbl_duedate">Fecha De vencimiento</string>
+    <string name="enter_due_date">Introduzca la fecha de vencimiento</string>
+    <string name="invalid_duedate">Fecha de vencimiento válida</string>
+    <string name="product_expire">Próximos a vencerse</string>
+    <string name="product_linventory">Inventario bajo</string>
+    <string name="supp_debt">Número de días de la deuda</string>
+    <string name="promotion_filters">Más de promoción Filtros</string>
+    <string name="invalid_msg">Por favor ingrese un nombre válido</string>
+    <string name="minimum_amount">Cantidad mínima*:</string>
+    <string name="report11">Informe de ventas</string>
+    <string name="spnfliter_week">Semana</string>
+    <string name="spnfliter_l_week">La semana pasada</string>
+    <string name="spnfliter_b_lweek">Antes de la última Semana</string>
+    <string name="sales_total">Ventas totales</string>
+    <string name="sold_items">No de artículos vendidos</string>
+    <string name="profit_percentage">Rentabilidad ( % )</string>
+
+    <!-- CashBox.xml -->
+
+    <string name="cnfm_data">Confirmar Datos</string>
+    <string name="operater">Operador</string>
+    <string name="number">Número</string>
+    <string name="reg_value">Valor</string>
+    <string name="recharge_value">Valor Recarga</string>
+    <string name="assistance_value">Valor Asistencia</string>
+    <string name="txt_recharge">Recargar</string>
+    <string name="reg_yes">Si</string>
+    <string name="reg_no">No</string>
+    <string name="reg_text">Seleccione el valor de la recarga</string>
+    <string name="theft_text">Por $400 pesos desea adquirir el servicio de préstamo  de celular  por 3 meses, en caso de robo.</string>
+    <string name="auth_number">Número de autorización</string>
+    <string name="no_billsale">Número de factura de venta</string>
+    <string name="succ_tranctn">Transacción exitosa</string>
+    <string name="leave">Salir</string>
+    <string name="close">Cerrar</string>
+    <string name="print">Impresión</string>
+    <string name="key">Clave</string>
+    <string name="reg_cancel">Cancelar</string>
+    <string name="reg_cnfrm">Confirmar</string>
+    <string name="enter_more_amount">El valor debe ser mayor o igual a $1.000 y menor o igual a $99.999</string>
+    <string name="enter_less_amount">Introduzca un valor menor o igual a </string>
+    <string name="amount_dialog">Monto</string>
+    <string name="loan_servition_alert">“Por favor revise la opción del servicio de préstamo</string>
+    <string name="select_operator">Seleccione el operador</string>
+    <string name="enter_amount">El valor debe ser mayor o igual a $1.000 y menor o igual a $99.999</string>
+    <string name="enter_key">Debe ingresar su clave de venta</string>
+    <string name="reg_assist">Asistencia</string>
+    <string name="report12"> Consultar consolidado de ventas</string>
+    <string name="report13">Consultar transacciones del día</string>
+    <string name="sumataria">Sumatoria</string>
+    <string name="id_trans">IdTransaccion</string>
+    <string name="type">Tipo</string>
+    <string name="report_value">Valor</string>
+    <string name="state">Estado</string>
+    <string name="report14">Consultar saldo por cuentas</string>
+    <string name="paquetigos">Compra de Paquetigos</string>
+    <string name="paquetigo">Paquetigos</string>
+    <string name="cellular">Celular</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="cellphone_no">Número de celular</string>
+    <string name="reg_product">Producto</string>
+    <string name="paquetigos_dialog2">Confirmación</string>
+    <string name="rechrge_dialog2">Recargas</string>
+    <string name="rechrge_dialog3">Confirmar datos</string>
+
+    <!-- changepassword.xml -->
+
+    <string name="current_key">Clave actual</string>
+    <string name="new_key">Clave nueva</string>
+    <string name="confirm_new_key">Confirme clave nueva</string>
+    <string name="administration">Administración</string>
+    <string name="password_validation">Nueva clave debe ser igual para confirmar clave</string>
+    <string name="alert_changepassword">Cambio de contraseña de alerta</string>
+    <string name="anular">Cancelar</string>
+    <string name="pwd_validation">La clave nueva debe ser distinta a la vieja</string>
+    <string name="please_enter_new_key">Por favor ingrese la nueva clave</string>
+    <string name="please_enter_confirm_key">Por favor confirme la nueva clave</string>
+    <string name="Please_enter_key">Por favor ingrese la clave</string>
+    <string name="please_enter_valid_new_key"> La nueva clave ingresada debe tener mínimo 6 y máximo 10 caracteres. </string>
+    <string name="please_enter_valid_confirm_key">La clave confirmada debe tener mínimo 6 y máximo 10 caracteres.</string>
+    <string name="Please_enter_valid_key">La clave ingresada debe tener mínimo 6 y máximo 10 dígitos. </string>
+    <string name="account_number">Debe introducir un código de convenio y número de cuenta</string>
+    <string name="reference_number">Debe ingresar el número de referencia</string>
+    <string name="valide_phone_number">Debe ingresar un número de celular válido</string>
+    <string name="payment_value">Debe ingresar el valor de pago</string>
+
+    <!-- Reports -->
+
+    <string name="report15">Producto Recargas</string>
+    <string name="report16">Producto Pines</string>
+    <string name="report17">Producto paquetigo</string>
+    <string name="report18">Producto Loteria</string>
+    <string name="report19">Facturas</string>
+    <string name="report20">Retiro efectivo Davipalata</string>
+    <string name="fecha">Fecha</string>
+    <string name="operator">Operador</string>
+    <string name="rep_number">Número</string>
+    <string name="converaion">Convenio</string>
+    <string name="codigo_conven">Codigo convenio</string>
+    <string name="cedula">Cédula</string>
+    <string name="aval_seats">Cupo disponible</string>
+    <string name="aval_pay">Disponible pagos</string>
+    <string name="refer1">Referencia1</string>
+    <string name="refer2">Referencia2</string>
+
+    <!-- DaviPlata Payment. Cashout -->
+
+    <string name="DaviPlata_Payment">Pago Daviplata</string>
+    <string name="daviplata_transaction_data">Ingresar los datos de la transaccion Daviplata</string>
+    <string name="daviplata_remove_the_silver">Escriba el número de Daviplata desde el cual se va a retirar la plata</string>
+    <string name="daviplata_get_the_money">Escriba el número que le enviamos al cliente para sacar la plata</string>
+    <string name="daviplata_value_to_remove">Escriba el valor a retirar</string>
+    <string name="daviplata_Key_selling">Clave de venta</string>
+    <string name="daviplata_remove_the_silver_dailog">Número del Daviplata desde el cual se va a retirar la plata</string>
+    <string name="daviplata_get_the_money_dailog">Número que le enviamos al cliente para sacar la plata</string>
+    <string name="daviplata_Valor_a_retira_dailog">Valor a retirar</string>
+
+    <!-- DaviPlata validations showimg messages -->
+
+    <string name="silver1_msg">Debe suministrar el número de Daviplata</string>
+    <string name="silver2_msg">Debe suministrar una OTP válida</string>
+    <string name="invalidsilver2_msg">Debe suministrar una OTP válida</string>
+    <string name="removesilver_msg">Debe suministrar una OTP valida</string>
+    <string name="removevalue_msg">Debe suministrar el valor a retirar</string>
+    <string name="removevalue_errormsg">Debe suministrar el valor a retirar</string>
+    <string name="keyselling_msg">Por Favor suministre su clave de venta</string>
+    <string name="keyselling_errormsg">Usuario inválido</string>
+    <string name="silver_errormsg">Introduzca un Número de Daviplata válido</string>
+    <string name="remove_errormsg">Introduzca un valor válido para eliminar</string>
+    <string name="davip_text">Ingrese los datos de la transacción Daviplata</string>
+    <string name="daviplata_grant_for">Se realizará un registro de pago Daviplata por $ </string>
+    <string name="daviplata_grant_for1"> ¿Esta seguro?</string>
+    <string name="daviplata_authorization_number"> Número de autorización</string>
+    <string name="daviplata_value">Valor</string>
+    <string name="DaviPlata_dialog1">Confirmar datos DaviPlata</string>
+    <string name="DaviPlata_dialog2">Confirme los datos de la transacción</string>
+    <string name="DaviPlata_dialog3">Pago exitoso</string>
+    <string name="invalid_devipkey">Usuario inválido</string>
+    <string name="davipalta_key">Por favor suministre la clave de venta</string>
+    <string name="invaliddavipalta_key">La clave debe contener mínimo 6 dígitos</string>
+
+    <!-- Convenio Module -->
+
+    <string name="convenio_text">Por favor realice la captura del codigo de barras en esta pantalla</string>
+    <string name="confirmar_valor">Confirmar Valor</string>
+    <string name="numero_celular">Número de celular</string>
+    <string name="cedular_nit">Cédula RNC</string>
+    <string name="code_pay">Cdigo pago</string>
+    <string name="num_auth">Número de autorización</string>
+    <string name="convention_info">Recaudo facturas</string>
+    <string name="key_sucess">Cambio de clave exitoso</string>
+    <string name="enter_validcelueno">Debe ingresar un número de celular del contacto válido</string>
+    <string name="enter_validcnfmvalue">Debe ingresar el valor a cancelar de la factura</string>
+    <string name="enter_keysell">Debe ingresar su clave de venta</string>
+    <string name="convenio_dialog1">Se Realizará el pago de la factura, Desea continuar?</string>
+    <string name="convenio_dialog2">Se Realizará el pago de la Factura</string>
+    <string name="convenio_dialog3">Transacción exitosa</string>
+    <string name="depositante">Depositante</string>
+
+    <!-- Lottery sales -->
+
+    <string name="lottery_sales">Loterías</string>
+    <string name="lottery_txttitle">Lotería</string>
+    <string name="lotteries">Lotería</string>
+    <string name="lottery">Lotería</string>
+    <string name="inicio">Inicio</string>
+    <string name="depost_daviplattxt">Depositante</string>
+    <string name="document">Documento</string>
+    <string name="series">Serie</string>
+    <string name="fraction">Fracción</string>
+    <string name="number_of_celular">Número de celular</string>
+    <string name="number_of_autorization">Número de autorización</string>
+    <string name="num_of_referndo">Número de referencia</string>
+    <string name="select_lottery">Debe seleccionar una lotería</string>
+    <string name="enter_num">Debe ingresar número a buscar para la apuesta</string>
+    <string name="enter_celular">Debe ingresar un número de celular válido</string>
+    <string name="enter_document">Debe ingresar un número de documento</string>
+    <string name="enter_lotkey">Por Favor digite la clave</string>
+    <string name="invalid_lotkey">Terminal inválido</string>
+    <string name="txt_loteria">Loterías</string>
+    <string name="txt_scann_barcode">Por favor escanear código de barras</string>
+    <string name="loteria_number">Número</string>
+    <string name="loteria_serie">Serie</string>
+    <string name="loteria_fractions">Fracciones</string>
+
+    <!-- Pines -->
+
+    <string name="pines">Pines</string>
+    <string name="proveedor">Proveedor</string>
+    <string name="producto">Producto</string>
+    <string name="valor">Valor</string>
+    <string name="live">Salir</string>
+    <string name="select_pin_provider">Seleccione un proveedor</string>
+    <string name="select_pin_product">Debe seleccionar un producto</string>
+    <string name="select_valid_cell">Debe ingresar un número de celular valido</string>
+    <string name="select_key">Debe ingresar su clave de venta</string>
+    <string name="select_valid_terminal">Terminal invalido</string>
+    <string name="btn_print">Imprimir</string>
+    <string name="btn_exit">Salir</string>
+    <string name="pines_invalidcellnumeber">Debe ingresar un número de celular valido</string>
+    <string name="pines_print">Imprimir</string>
+    <string name="pines_leave">Salir</string>
+    <string name="pines_dialog1">Confirmar datos</string>
+
+    <!-- Collections -->
+
+    <string name="code_of_conve">Código de convenio o número de cuenta</string>
+    <string name="confirm_code_of_conve">Confirme el número de convenio o número de cuenta</string>
+    <string name="recaudos">Recaudo de facturas</string>
+    <string name="collection_title1">Recaudo con referencia de pago</string>
+    <string name="codes_agreement">Codigos de convenio</string>
+    <string name="search">Buscar</string>
+    <string name="cedula_or_nit">Cédula o Nit</string>
+    <string name="Confirm_cedula_or_nit">Confirmar cédula o Nit</string>
+    <string name="PAYMENT_CODE">Código pago</string>
+    <string name="Confirm_PAYMENT_CODE">Confirmar código pago</string>
+    <string name="confirm_value">Confirmar valor</string>
+    <string name="confirm_mobile">Confirmar celular</string>
+    <string name="REFRESH">Refrescar</string>
+    <string name="agreement">Convenio</string>
+    <string name="code_agreement">Código convenio</string>
+    <string name="reg_pago">Registro pago</string>
+    <string name="abonar">Abonar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="pagar_total_factura">Pagar total factura</string>
+    <string name="puntored_payment_error_message">Lo siento, no se encuentra convenio con PuntoRed</string>
+    <string name="collection_invalid_msg">Ingrese el código de convenio o número de cuenta</string>
+    <string name="collection_invalid_msg1"> Por favor confirme el convenio o número de cuenta</string>
+
+    <!-- new Collections -->
+
+    <string name="collection_search">Buscar</string>
+    <string name="invalid_acno">La confirmación del código de convenio o número de cuenta no coincide</string>
+    <string name="collection_refresh">Refrescar</string>
+    <string name="coll_cancel">Anular</string>
+    <string name="collection_text_title">Tipo de Cuenta: Cuenta Ahorros</string>
+    <string name="collection__title">Confirmación</string>
+    <string name="invalidnit">Debe ingresar el número de referencia</string>
+    <string name="invalidnit1">Debe ingresar la confirmación del número de referencia</string>
+    <string name="invalid_code">Debe ingresar el valor de pago</string>
+    <string name="invalid_cellular">Debe ingresar un número de celular válido</string>
+    <string name="collection_invalid_nit">La cedula o nit ingresado y su confirmación no coinciden</string>
+    <string name="collection_invalid_paycode">El código de pago y su confirmación no coinciden</string>
+    <string name="collection_invalid_value">El valor y su confirmación no coinciden</string>
+    <string name="collection_invalid_celular">El campo celular y su confirmación no coinciden</string>
+    <string name="oops_showmsg">Error de conexión.</string>
+    <string name="supplier_update">Proveedor actualizado</string>
+    <string name="product_update">Modificaciòn exitosa</string>
+    <string name="inventory_ady_update">Modificaciòn Exitosa</string>
+
+    <!-- new string list in CashBox -->
+
+    <string name="select_operater">Seleccione un operador</string>
+    <string name="other">Otro</string>
+    <string name="ok_msg">Aceptar</string>
+    <string name="oops_errmsg">Error :</string>
+    <string name="select_operator_option">Seleccione un operador</string>
+    <string name="select_operator_paquetigos">Seleccione un Paquetigo</string>
+    <string name="select_operator_lottery">Seleccione una lotería</string>
+    <string name="select_operator_pines">Seleccione un proveedor</string>
+    <string name="change_pass_title">Cambio de clave</string>
+    <string name="slect_lotery_option">Seleccione una lotería</string>
+    <string name="slect_lotery_number_error">No hay series disponibles para el número</string>
+    <string name="no_spaces_allowed">No se permiten espacios en la clave</string>
+    <string name="printer_errmsg">Debe conectar la impresora</string>
+    <string name="trans_errmsg">Error de conexión : </string>
+    <string name="store_pass">Clave de autorización de la tienda  :</string>
+    <string name="store_pass_error">Clave de autorización inválida</string>
+    <string name="discount_errmsg">Lo siento, no tiene acceso a esta operación</string>
+    <string name="select_product_pines">Seleccione un producto</string>
+    <string name="user_blocked">El usuario ha sido bloqueado</string>
+
+    <!-- Recaudo con código de barras in CashBox -->
+
+    <string name="convention_title">Recaudo con código de barras</string>
+    <string name="please_type">Favor digite el número de celular al cual se enviará el mensaje de texto confirmando la transacción</string>
+    <string name="collection_errmsg1">Confirme el código de convenio o número de cuenta</string>
+    <string name="collection_errmsg2">ingrese el código de convenio o número de cuenta</string>
+    <string name="convention_errmsg">Debe ingresar el valor a cancelar de la factura  - Debe ingresar  un número de celular de contacto</string>
+
+    <!-- Printer Strings -->
+
+    <string name="virgin">VIRGIN</string>
+    <string name="fecha_printer">FECHA</string>
+    <string name="numero">NUMERO</string>
+    <string name="num_auth_printer">NUM . AUTORIZACION</string>
+    <string name="numero_de_cellular">NUMERO DE CELUAR</string>
+    <string name="id_transacction">ID TRANSACCION</string>
+    <string name="fecha_trans">Fecha Transaccion</string>
+    <string name="hora_trans">Hora Transaccion</string>
+    <string name="valor_printer">VALOR</string>
+    <string name="tear">----------------------------------</string>
+    <string name="number_de_celuar">NUMERO DE CELULAR</string>
+    <string name="pin_no">PIN NO :</string>
+    <string name="serial">Serial :</string>
+    <string name="valor_s">Valor :</string>
+    <string name="num_aut">Num. de Aut :</string>
+    <string name="no_factura_de_venta_no">No Factura De Venta No :</string>
+    <string name="reference_de_pago_title">DAVIVIENDA\nPUNTORED</string>
+    <string name="reference_de_pago_sucess">TRANSACCION EXITOSA</string>
+    <string name="reference_de_pago_fecha_trans">Fecha\nTransaccion</string>
+    <string name="reference_de_pago_hora_trans">Hora\nTransaccion</string>
+    <string name="reference_de_pago_terminal">Terminal</string>
+    <string name="reference_de_pago_convenio">CONVENIO</string>
+    <string name="reference_de_pago_codigo_convenio">Codigo\nConvenio</string>
+    <string name="reference_de_pago_codigo_autorizacion">Codigo\nAutorizacion</string>
+    <string name="reference_de_pago_user_de_venta">Usuario de \nVenta</string>
+    <string name="r_efectivo">EFECTIVO :</string>
+    <string name="iva">ITBIS(16) :</string>
+    <string name="r_total">TOTAL :</string>
+
+    <!-- Printer Error  Messages Strings -->
+
+    <string name="p_msg_0"> Operación exitosa </string>
+    <string name="p_msg_1001"> La impresora está conectada </string>
+    <string name="p_msg_1002"> La impresora no está conectada </string>
+    <string name="p_msg_1003"> No hay conexión con la impresora </string>
+    <string name="p_msg_1004"> Error al conectar el dispositivo, este modelo de impresora no es compatible </string>
+    <string name="p_msg_1005"> Error al revisar el estado de la impresora conectada </string>
+    <string name="p_msg_1006"> No se ha especificado el contexto </string>
+    <string name="p_msg_1007"> La configuración del dispositivo Bluetooth es inválida </string>
+    <string name="p_msg_1008"> No se encuentra el dispositivo Bluetooth</string>
+    <string name="p_msg_1101"> Operación no permitida con el dispositivo, o se ha usado un valor de parámetro no válido</string>
+    <string name="p_msg_1102"> La impresora está fuera de línea</string>
+    <string name="p_msg_1103"> El nombre de archivo no existe</string>
+    <string name="p_msg_1104"> El servicio no puede ejecutar la acción solicitada </string>
+    <string name="p_msg_1105"> El servicio agotó el tiempo de espera de respuesta de la impresora </string>
+    <string name="p_msg_1106"> No se encontró la impresora buscada</string>
+    <string name="p_msg_1201"> La cubierta de la impresoda está abierta </string>
+    <string name="p_msg_1202"> La impresora no tiene papel </string>
+    <string name="p_msg_1203"> El archivo especificado tiene un formato no soportado</string>
+    <string name="p_msg_1204"> La imagen especificada es demasiado grande</string>
+
+    <!-- Modulo Efectivo -->
+    <!-- Aceptación,Devolución -->
+
+    <string name="modulo_efectivo">Módulo Efectivo</string>
+    <string name="acceptance">Aceptación</string>
+    <string name="modulo_return">Devolución</string>
+    <string name="modulo_value">Valor</string>
+    <string name="authenticate_acceptance">Autenticar Aceptación  :</string>
+    <string name="distribution_partner">Usuario Distribuidor</string>
+    <string name="pin_dealer">Pin Distribuidor</string>
+    <string name="modulo_key">Clave</string>
+    <string name="succesful_transaction">Transacción Exitosa</string>
+    <string name="authorization_number">Número de Autorización </string>
+    <string name="efectivo_message_start">Se va a realizar una aceptación de efectivo por $</string>
+    <string name="acceptence_message_start">Se va a realizar una Devolución de efectivo por $</string>
+    <string name="accptnce_message_end">¿Está seguro de realizar la transacción?</string>
+    <string name="acopio_dialog_msssg_start">Va a recibir dinero  por el valor de $ </string>
+    <string name="acopio_dialog_msssg_end">¿Está seguro de aceptarlo?</string>
+    <string name="collection_centers">Centros de Acopio</string>
+    <string name="id_storage_center">ID centro de acopio</string>
+    <string name="name_collection_center">Nombre de centro de acopio</string>
+    <string name="enter_dealer">Debe ingresar el usuario del distribuidor</string>
+    <string name="min_and_max_value">Digite un valor valido mínimo $1.000 máximo $50.000.000</string>
+    <string name="value_enter">Digite un valor</string>
+    <string name="pin_distributor">Debe ingresar el pin del distribuidor</string>
+    <string name="type_key">por favor digite la clave</string>
+    <string name="invalid_pwd">Usuario inválido</string>
+    <string name="select_six_digits"> La clave del comercio debe contener 6 dígitos</string>
+    <string name="enter_auth_number">Entrar Número de autorización </string>
+    <string name="exit">SALIR</string>
+    <string name="distributor_pin_incorrect">El pin del distribuidor es inválido</string>
+    <string name="distributor_user_incorrect">distributor incorrect user input is entered</string>
+    <string name="confirmacion_centros_de_acopio">Confirmación centros de acopio</string>
+    <string name="acopio2_dialog_msssg">Va rechazar la ENTREGA de dinero del centro de acopio por valor de $10,000.?esta seguro?</string>
+    <string name="no_special_collection_center">No se ha seleccionado un centro de acopio</string>
+    <string name="collection_id">No ha seleccionado ningún centro de acopio</string>
+    <string name="type_value">Debe digitar un valor</string>
+    <string name="type_key_six_digits">La clave del aliado debe contener 6 dígitos</string>
+    <string name="cash_acceptance_conformation">Confirmación Aceptación de Efectivo</string>
+    <string name="acceptance_collection">Aceptación Centros de Acopio</string>
+     <string name="centros_de_Acopio.">Centros De Acopio.</string>
+
+    <!-- Control de dispersion -->
+
+    <string name="Programacion_de_aceptaciones">Control De Dispersion</string>
+    <string name="aceptacion">ACCEPTACION :</string>
+    <string name="devolucion">DEVOLUCION :</string>
+    <string name="centro_de_acopio">Centro De Acopio</string>
+    <string name="btn_salir">Salir</string>
+    <string name="medio">Medio</string>
+    <string name="cntrl_de_dispsndialog2_mssg">Transaccion Exitosa ID TRX 343764029</string>
+    <string name="dispersion3_dialog_msssg">Va rechazar la ENTREGA de dinero del centro de acopio por valor de $</string>
+    <string name="dispersion4_dialog_mssg">Dinero registrado exitosamente</string>
+    <string name="dispersion5_dialog_mssg"> Va a aceptar la DEVOLUCION de dinero del centro de acopio por valor de $</string>
+    <string name="dispersion7_dialog_mssg">Va rechazar DEVOLUCION de dinero de acopio  por valor de $350,000 ?Esta seguro?</string>
+    <string name="dispersion_confrm_value">Debe ingresar el confirmar valor total en efectivo</string>
+    <string name="value_not_match">Debe introducir el valor confirman</string>
+    <string name="clave"> Debe ingresar su clave de venta</string>
+    <string name="password_validations">value should be equal to confirmvalue</string>
+    <string name="aceptacions">Aceptacion</string>
+    <string name="control_de_dispersion">Control De Dispersión</string>
+    <string name="registro_de_efectivo">Registro De Efectivo</string>
+    <string name="devolucions">Devolución</string>
+    <string name="centros_de_Acopio">Centros De Acopio</string>
+
+    <!-- Registro de Efectivo -->
+
+    <string name="registro_de_efect">Registro De Efectivo</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="efectivo_message">Va a realizar un registro de efectivo por $</string>
+    <string name="efectivo_message1">¿Está  seguro de realizar el registro?</string>
+    <string name="transaccion_exitosa">Transaccion Exitosa</string>
+    <string name="transaccion_exitosa_mssg">Dinero registrado exitosamente el cierre de caja realizo de manera correcta</string>
+    <string name="Please_enter_value">Debe ingresar el valor total en efectivo</string>
+    <string name="please_enter_confirmValue">La clave del comercio debe contener 6 digitos</string>
+    <string name="question_dialog">Esta seguro?</string>
+    <string name="celular">Celular</string>
+    <string name="confirm_celular">Confirmar Celular</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="paqutius_value">Valor :</string>
+    <string name="must_enter_all">Debe introducir todos los campos</string>
+    <string name="value_equals_confirmvalue">El valor debe ser igual para confirmar el valor</string>
+
+    <!-- Deposito Daviplata -->
+
+    <string name="deposito_daviplate_header">Deposito Daviplata</string>
+    <string name="deposito_daviplate_title">Depositante :</string>
+    <string name="tipo_de_documento">Tipo De Documento</string>
+    <string name="numero_de_documento">Número de Documento</string>
+    <string name="destino">Destino :</string>
+    <string name="departameno">Departamento</string>
+    <string name="valor_del_giro">Valor de giro</string>
+    <string name="numbres">Nombres</string>
+    <string name="dereccion">Dirección</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="ciudad_munisipio">Ciudad-Municipio</string>
+    <string name="numero_daviplata_destino">Numero Daviplata Destino</string>
+    <string name="daviplata_destino">Daviplata Destino:</string>
+    <string name="comision_del_giro">Comision del giro</string>
+    <string name="total_efectivo">Total Efectivo</string>
+    <string name="puntos_sugeridos_para">puntos sugeridos para el retiro</string>
+
+    <!-- Deposito Daviplata(Editar Depositante Dialog) -->
+
+    <string name="documento">Documento:</string>
+    <string name="confirmar_document">Confirmar Documento:</string>
+    <string name="actualizar_depositante">Actualizar Depositante:</string>
+    <string name="primer_nombre">Primer Nombre:</string>
+    <string name="sigundo_nombre">Segundo Nombre:</string>
+    <string name="cuidad">Ciudad</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="confirmar_apellido">Segundo Apellido</string>
+    <string name="crear_nuevo_depositante">Crear Nuevo Depositante</string>
+    <string name="fecha_expedicion">Fecha Expedicion</string>
+    <string name="crear">Crear</string>
+    <string name="consultar">Consultar</string>
+    <string name="morepromotion_value">Valor</string>
+    <string name="select_operator_acopio">No se ha encontrado el centro de acopio</string>
+    <string name="Programacion_acept_title">Programación de Aceptaciones</string>
+    <string name="dispersion_acepterbtn">Acepter</string>
+    <string name="dispersion_rechazarbtn">Rechazar</string>
+    <string name="valor2">Valor:</string>
+    <string name="select_tipo_option">Seleccione un tipo de documento</string>
+    <string name="reports_filters">Informes Filtros</string>
+    <string name="rline">Línea</string>
+    <string name="rgroup">Grupo </string>
+    <string name="spn_txt">Seleccione Texto</string>
+    <string name="trainig">Capacitación</string>
+    <string name="pago_providers">Pago a proveedores</string>
+    <string name="pago">Pagos</string>
+    <string name="Consulta_de_saldo_y_caja">Consulta de saldo y caja</string>
+    <string name="maneja_de_caja">Manejo de caja </string>
+    <string name="giros">Giros</string>
+    <string name="puntos">Puntos</string>
+    <string name="l_zero">CERO</string>
+    <string name="l_one">UNO</string>
+    <string name="l_two">DOS</string>
+    <string name="l_three">TRES</string>
+    <string name="l_four">CUATRO</string>
+    <string name="l_five">CINCO</string>
+    <string name="l_six">SEIS</string>
+    <string name="l_seven">SIETE</string>
+    <string name="l_eight">OCHO</string>
+    <string name="l_nine">NUEVE</string>
+    <string name="l_title">LOTERIA EN LINEA</string>
+    <string name="l_loteria">Loteria</string>
+    <string name="l_numero">NUMERO</string>
+    <string name="l_serie">SERIE</string>
+    <string name="l_fecha_del_sorteo">Fecha del\nsorteo</string>
+    <string name="l_valor">Valor</string>
+    <string name="l_fraccion">FRACCIÓN</string>
+    <string name="db_cleanup">Esta es una actualización que tomará varios minutos, por favor no cierre la Aplicación ni reinicie la tableta.</string>
+    <string name="store_remove">Tienda Registro eliminado correctamente .</string>
+    <string name="valid_date">Por favor, seleccione Válido Desde y Hasta fechas</string>
+
+    <!-- Sales Print -->
+
+    <string name="sale_print_hedder_1">Prueba de Impresion</string>
+    <string name="sale_print_hedder_2">Fecha </string>
+    <string name="sale_print_hedder_3">Razon Social:  </string>
+    <string name="sale_print_hedder_4">RNC:  </string>
+    <string name="sale_print_hedder_5">Telefono:  </string>
+    <string name="sale_print_line">------------------------------\n</string>
+    <string name="sale_print_line1">----------------------------------------------\n</string>
+    <string name="sale_print_hedder_6">Fecha de Impresion</string>
+    <string name="sale_print_hedder_7">Razon Social :</string>
+    <string name="sale_print_hedder_8">Direccion :</string>
+    <string name="sale_print_hedder_9">Descripcion</string>
+    <string name="sale_print_hedder_10">Monto</string>
+    <string name="sale_print_hedder_11">SubTotal</string>
+    <string name="sale_print_hedder_12">Descuento</string>
+    <string name="sale_print_hedder_13">ITBIS:</string>
+    <string name="sale_print_hedder_14">Total</string>
+    <string name="sale_print_hedder_15">Recibio :</string>
+    <string name="sale_print_hedder_16">Cambio :</string>
+    <string name="sale_print_hedder_17">Numero de Factura :</string>
+
+    <!-- Deposito Daviplata Create Validations -->
+
+    <string name="invalid_document">You should enter the Documents</string>
+    <string name="document_errmsg">Documente and Confrim Documente should be Same</string>
+    <string name="PrimerNo_errmsg">Please Enter Primer Number</string>
+    <string name="apellido_errmsg">Please Enter Apellido</string>
+    <string name="invalidcellular">You should enter the Celular</string>
+    <string name="celular_msg">Celular and Confrim Celular should be Same</string>
+    <string name="address_msg">Please enter Address</string>
+    <string name="city_msg">Please enter City</string>
+    <string name="date_msg">Please enter Date</string>
+    <string name="invoice_status">No se encontraron registros de ventas</string>
+    <string name="csales_uom">Unidad de Medida :</string>
+    <string name="Abono_a_cuenta"> Abono a cuenta </string>
+    <string name="handlingmsg_err_head">Print head of printer is hot.\n</string>
+    <string name="handlingmsg_err_motor">Motor Driver IC of printer is hot.\n</string>
+    <string name="handlingmsg_err_battery">Battery of printer is hot.\n</string>
+    <string name="handlingmsg_err_overheat">Please wait until error LED of the printer turns off. \n</string>
+    <string name="handlingmsg_err_no_response">Please check the connection of the printer and the mobile terminal.\nConnection get lost.\n</string>
+    <string name="handlingmsg_err_cover_open">Please close roll paper cover.\n</string>
+    <string name="handlingmsg_err_paper_feed">Please release a paper feed switch.\n</string>
+    <string name="handlingmsg_err_receipt_end">Please check roll paper.\n</string>
+    <string name="handlingmsg_err_wrong_paper">Please set correct roll paper.\n</string>
+    <string name="handlingmsg_err_autocutter">Please remove any jammed paper or foreign substances in the printer, and then turn the printer off and turn the printer on again.\n</string>
+    <string name="handlingmsg_err_need_recover">Then, If the printer doesn\'t recover from error, please cycle the power switch.\n</string>
+    <string name="handlingmsg_err_unrecover">Please cycle the power switch of the printer.\nIf same errors occurred even power cycled, the printer may out of order.</string>
+    <string name="handlingmsg_err_battery_real_end">Please connect AC adapter or change the battery.\nBattery of printer is almost empty.\n</string>
+    <string name="handlingmsg_warn_receipt_near_end">Roll paper is nearly end.\n</string>
+    <string name="handlingmsg_warn_battery_near_end">Battery level of printer is low.\n</string>
+    <string name="handlingmsg_ex_param">Programming error: Parameter error has occurred.\n</string>
+    <string name="handlingmsg_ex_open">Please check the connection of the printer and the mobile terminal.\nFailed to open communication port.\n</string>
+    <string name="handlingmsg_ex_connect">Please reconnect the printer and the mobile terminal.\nFailed to communicate with the printer.\n</string>
+    <string name="handlingmsg_ex_timeout">Please check the connection of the printer and the mobile terminal.\nCommunication has timed out.\n</string>
+    <string name="handlingmsg_ex_memory">Please close unnessesary applications.\nFree memory of the mobile terminal is insufficient.</string>
+    <string name="handlingmsg_ex_illegal">Programming error: Some API was called improperly.\n</string>
+    <string name="handlingmsg_ex_processing">Programming error: Please wait until completion of current processing.\n</string>
+    <string name="handlingmsg_ex_unsupported">Programming error: Unsupported printer has selected.\n</string>
+    <string name="handlingmsg_ex_off_line">Printer is offline.\n</string>
+    <string name="handlingmsg_ex_failure">Please check communication settings of the mobile terminal and application execution environment.\nUnknown error has occurred.\n</string>
+    <string name="handlingmsg_ex_application_error">Please contact developer of this application.\nApplication error has occurred.\n</string>
+    <string name="handlingmsg_notice_printer_problems">Printer problems:\n</string>
+    <string name="handlingmsg_notice_failed">Failed to get printer status.\n</string>
+    <string name="handlingmsg_notice_error">Error:\n</string>
+    <string name="handlingmsg_notice_warning">Warning:\n</string>
+    <string name="client_historic">No se encontraron registros para mostrar</string>
+    <string name="sync_sucesss">Sincronización exitosa</string>
+    <string name="invoice_copyed">Copia de la factura</string>
+    <string name="tipo">Tipo</string>
+    <string name="get_more_data">Click here to get more data..</string>
+    <string name="previas">Anterior</string>
+    <string name="sucess">Exitosa</string>
+    <string name="rejected">Rechazada</string>
+
+    <!-- Pago Texts -->
+
+    <string name="programa">Programa</string>
+    <string name="codigo_otp">Codigo/OTP</string>
+    <string name="fecha_de_nacimiento">fecha de nacimiento</string>
+    <string name="confirm_correo">confirm correo</string>
+    <string name="numero_de_cuenta">Numero de cuenta</string>
+    <string name="codigo_empleado">Codigo empleado</string>
+    <string name="apellido">apellido</string>
+    <string name="nombre">Nombre</string>
+    <string name="confiem_data">Confirmar Datos</string>
+    <string name="supp_payment">Pagos Proveedores</string>
+    <string name="mail__missmatch">email should be similar to confirm_email</string>
+    <string name="cellular__missmatch">cellular should be similar to confirm_cellular</string>
+    <string name="document_enter">Debe seleccionar el producto</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="enter_confirm_email">Enter Confirm emailId</string>
+    <string name="view_colon">:</string>
+    <string name="tipo_de_documentos">Tipo de documento</string>
+    <string name="numero_de_documentos">Numero de documento</string>
+    <string name="numero_de_cellulars">Numero de celular</string>
+    <string name="debe_seleccionar_el_producto">Debe seleccionar el producto</string>
+    <string name="debe_ingresar_el_numero_de_documento">Debe ingresar el numero de documento</string>
+    <string name="debe_ingresar_el_codigo_otp">Debe ingresar el Codigo/OTP</string>
+    <string name="debe_ingresar_el_numero_de_celular">Debe ingresar el número de celular</string>
+    <string name="debe_ingresar_confirmacion_numero_decelular">Debe ingresar confirmación número de celular</string>
+    <string name="debe_ingresar_el_correo">Debe ingresar el correo</string>
+    <string name="debe_ingresar_la_confirmacion_de_correo">Debe ingresar la confirmación de correo</string>
+    <string name="debe_ingresar_el_valor_el_cual_desea_retirar">Debe ingresar el valor el cual desea retirar</string>
+    <string name="clave_invalida">Clave invalida</string>
+    <string name="debe_ingresar_el_numero_de_otp_correcto">Debe ingresar el número de OTP correcto</string>
+    <string name="digite_un_fecha">digite un fecha</string>
+    <string name="pago_providers_pay_suppliers">Seleccione proveedor</string>
+    <string name="pago_providers_pay_product">Seleccione producto</string>
+    <string name="pago_providers_pay_program">Seleccione el programa</string>
+    <string name="pago_providers_pay_document">Seleccione Documento</string>
+    <string name="debe_seleccionar_el_proveedores">Debe seleccionar el proveedor</string>
+    <string name="debe_seleccionar_el_programo">Debe seleccionar el programa</string>
+    <string name="debe_ingresar_el_numero_de_documentos">Debe ingresar el numero de documento</string>
+
+    <!-- Aceptación Print Texts -->
+
+    <string name="accpt_title">ENTREGA DE EFECTIVO CONEXRED</string>
+    <string name="accpt_exitosr">TRANSACCION EXITOSA</string>
+    <string name="entregado">ENTREGADO A</string>
+    <string name="accpt_valor">Valor </string>
+    <string name="accp_fechatrans">Fecha Transaccion</string>
+    <string name="accp_horatrans">Hora Transaccion</string>
+    <string name="entrega_por"> Entrega por</string>
+    <string name="accp_text">Entrega de Efectivo para pagos,este comprobante indica la aceptacion de efectivo en el comercio  autorizado para pagos</string>
+
+    <!-- Devolución Print Texts -->
+
+    <string name="devol_title">DEVOLUCION DE EFECTIVO CONEXRED</string>
+    <string name="recibido_por">Recibido por</string>
+    <string name="devol_text">Devolucion de Efectivo ,este comprobante indica la devolucion del efectivo en el comercio autorizado para pagos</string>
+
+    <!-- Phase 2B modules Print Hedders -->
+
+    <string name="twob_line1">ENTREGA DE EFECTIVO</string>
+    <string name="twob_line2">CONEXRED</string>
+    <string name="twob_line3">TRANSACCION EXITOSA</string>
+    <string name="twob_line4">ENTREGADO A: </string>
+    <string name="twob_line8">Devolucion de Efectivo para pagos, este comprobante indica la devolucion del efectivo en el comercio autorizado para pagos.</string>
+    <string name="twob_line10">Entregado por: </string>
+    <string name="twob_line11">DEVOLUCION DE EFECTIVO</string>
+    <string name="twob_line12">Recibido por: </string>
+
+    <!-- Centros de Acopio Print Texts -->
+
+    <string name="centros_title">ENTREGA DE EFECTIVO CONEXRED</string>
+    <string name="centros_test">Entrega de Efectivo para pagos,este comprobante indica la aceptacion de efectivo en el comercio autorizado para pagos</string>
+    <string name="destineterio">Destinatario</string>
+    <string name="volor_del_giro">Valor del giro</string>
+    <string name="costo">Costo de la transaccion</string>
+    <string name="deviplato_destino">Deviplata Destino</string>
+    <string name="puntos_sugeridos">Punto sugerido</string>
+    <string name="costo_del_giro">Costo Del Giro</string>
+    <string name="informacion_transaccion">Informacion Transaccion</string>
+
+    <!-- Deposito Daviplata Activity  layout xml texts -->
+
+    <string name="select_tipo_docu">Seleccione el tipo de documento</string>
+    <string name="enter_docum">Por favor ingrese el número de documento</string>
+    <string name="wrong_cnfm_daviplata">El número de Daviplata no coincide con el confirmado, por favor verifique</string>
+    <string name="enter_cnfm_daviplata">Por favor confirme el número de Daviplata de destino</string>
+    <string name="enter_daviplata">Por favor ingrese el número de Daviplata de destino</string>
+    <string name="please_enter_amount">Por favor ingrese el número de Daviplata de destino</string>
+
+    <!-- Control de Dispersión Activity  layout xml texts -->
+
+    <string name="dispers_btnaccept">Aceptar</string>
+    <string name="dispers_btnreject">Rechazar</string>
+    <string name="dispers_accept_the_devolution">Va a aceptar la DEVOLUCION de dinero del centro de acopio por valor de</string>
+    <string name="dispers_reject_the_devolution">Va a rechazar la DEVOLUCION de dinero del centro de acopio por valor de</string>
+    <string name="dispers_accept_the_acceptance">Va a aceptar la ENTREGA de dinero del centro de acopio por valor de</string>
+    <string name="dispers_reject_the_acceptance">Va a rechazar la ENTREGA de dinero del centro de acopio por valor de</string>
+    <string name="dispers_btnaccept_sureExit">¿Está seguro?</string>
+    <string name="hint_calendar">YYYY-MM-DD</string>
+    <string name="please_enter">Por favor ingrese el valor</string>
+    <string name="please_select">Por favor seleccione</string>
+    <string name="otp">Debe ingresar el Código/OTP </string>
+    <string name="document_number">Número de Documento</string>
+    <string name="cell_number">Debe ingresar el número de celular</string>
+    <string name="cnfm_cell_number">Debe ingresar confirmación número de celular</string>
+    <string name="email_id">Debe ingresar la dirección de Email</string>
+    <string name="cnfm_email_id">Debe ingresar la confirmación de correo</string>
+    <string name="enter_document_number">Debe ingresar el número de documento</string>
+    <string name="confirmation">Confirmacion</string>
+    <string name="wrong_key">Clave inválida</string>
+    
+    <string name="barcode_collection_value_validation">Debe ingresar el valor para pagar la factura </string>
+    <string name="barcode_collection_conform_value_validation">Debe ingresar la confirmación del valor para el pago </string>
+    <string name="barcode_collection_conform_value_conform_validation">El valor y su confirmación deben coincidir para proceder con el pago </string>
+     <string name="extranal_printer">Impresora Externa</string>
+    
+     <string name="db_errormessage">La Aplicación encontró un error en los datos y se cerrará </string>
+     <string name="auto_sync_messsage1">Procesando </string>
+     <string name="auto_sync_messsage2">de </string>
+     <string name="auto_sync_messsage3">registros de la tabla </string>
+     <string name="or">\nO\n</string>
+     
+     <string name="back_sync">La sincronización continuará en segundo plano, el proceso podrá tomar algunos minutos, pero usted puede continuar trabajando.</string>
+    <string name="msj_go_out_module">¿Está seguro que desea salir de este módulo?</string>
+    <string name="txt_purchaseprice">Precio de Compra *:</string>
+    <string name="txt_sellingprice">Precio de Venta *:</string>
+    <string name="lbl_telephone">Teléfono</string>
+    <string name="lbl_sold_units">Unidades Vendidas</string>
+    <string name="msj_print_invoice">¿Desea imprimir la factura?</string>
+    <!-- Payment types -->
+    <string name="lbl_initial_debt">Deuda Inicial</string>
+    <string name="lbl_purchase">Compra</string>
+    <string name="lbl_payment_payment">Abono/Pago</string>
+    <string name="lbl_lend_money">Préstamo Dinero</string>
+    <!---->
+    <!-- Movement types -->
+    <string name="box_opening">Apertura de Caja</string>
+    <string name="pay_lend_client">Pago o Préstamo de Clientes</string>
+    <string name="deposit_to_box">Depósito a Caja</string>
+    <string name="provider_payment">Pago de Proveedores</string>
+    <string name="box_closing">Cierre de caja</string>
+    <string name="sale">Venta</string>
+    <!---->
+    <!-- Concept -->
+    <string name="client_lending">Préstamo de Clientes</string>
+    <string name="pay_to_debt">Abono a deuda</string>
+    <string name="pay_to_cash">Pago al contado</string>
+    <string name="debt_payment">Pago de Deuda</string>
+    <string name="cash_withdrawal">Retiro de efectivo</string>
+    <!---->
+</resources>

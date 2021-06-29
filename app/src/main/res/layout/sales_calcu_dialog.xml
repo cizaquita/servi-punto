@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/sales_row"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etxt_DialogBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/barcode_input"
+        android:cursorVisible="false"
+        android:digits="0123456789"
+        android:focusable="false"
+        android:gravity="right|center_vertical"
+        android:inputType="number"
+        android:maxLength="19"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_DialogCalSeven"
+                style="@style/sales_btn_cal"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/btn_DialogCalFour"
+                style="@style/sales_btn_cal"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/btn_DialogCalOne"
+                style="@style/sales_btn_cal"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/btn_DialogCalClearOne"
+                style="@style/sales_btn_cal"
+                android:background="@drawable/calcu_remove_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_DialogCalEight"
+                style="@style/sales_btn_cal"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/btn_DialogCalFive"
+                style="@style/sales_btn_cal"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/btn_DialogCalTwo"
+                style="@style/sales_btn_cal"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/btn_DialogCalZero"
+                style="@style/sales_btn_cal"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_DialogCalNine"
+                style="@style/sales_btn_cal"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/btn_DialogCalSix"
+                style="@style/sales_btn_cal"
+                android:text="@string/six" />
+
+            <Button
+                android:id="@+id/btn_DialogCalThree"
+                style="@style/sales_btn_cal"
+                android:text="@string/three" />
+
+            <Button
+                android:id="@+id/btn_DialogCalClear"
+                style="@style/sales_btn_cal"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_DialogCalSearch"
+                style="@style/sales_btn_cal"
+                android:background="@drawable/calcu_search_bg" />
+
+            <Button
+                android:id="@+id/btn_DialogCalEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/calcu_enter_bg"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_DialogEnd"
+            style="@style/sales_btn_end"
+            android:background="@drawable/cash_button"
+            android:visibility="gone"
+            android:text="@string/end_sale"
+            android:textColor="@color/white_color"  />
+
+        <Button
+            android:id="@+id/btn_DialogCancel"
+            style="@style/sales_btn_end"
+            android:background="@drawable/new_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+</LinearLayout>

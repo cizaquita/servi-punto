@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_linearlayout"
+    android:background="@drawable/splash_bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        style="@style/layout_linearlayout"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            style="@style/layout_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right" >
+
+            <EditText
+                android:id="@+id/etxt_UserName"
+                style="@style/view_et"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/user_login"
+                android:hint="@string/hint_user_name"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/etxt_Password"
+                style="@style/view_et"
+                android:layout_below="@+id/etxt_UserName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_password"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Spinner
+                android:id="@+id/spn_Language"
+                style="@style/view_et"
+                android:layout_alignLeft="@+id/etxt_Password"
+                android:layout_alignRight="@+id/etxt_Password"
+                android:layout_below="@+id/etxt_Password"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_language" />
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/etxt_Password"
+                android:layout_below="@+id/spn_Language"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/login_submit"
+                android:drawableRight="@drawable/login_sub_right_arrow"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/login"
+                android:textColor="@color/white_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login_div" />
+
+    <RelativeLayout
+        style="@style/layout_linearlayout"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout11"
+            style="@style/layout_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="invisible" >
+
+            <EditText
+                android:id="@+id/etxt_UserName1"
+                style="@style/view_et"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/user_login"
+                android:hint="@string/hint_user_name"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/etxt_Password1"
+                style="@style/view_et"
+                android:layout_below="@+id/etxt_UserName1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_password"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Spinner
+                android:id="@+id/spn_Language1"
+                style="@style/view_et"
+                android:layout_alignLeft="@+id/etxt_Password1"
+                android:layout_alignRight="@+id/etxt_Password1"
+                android:layout_below="@+id/etxt_Password1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_language" />
+
+            <Button
+                android:id="@+id/btn_Login1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/etxt_Password1"
+                android:layout_below="@+id/spn_Language1"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/login_submit"
+                android:drawableRight="@drawable/login_sub_right_arrow"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/login"
+                android:textColor="@color/white_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/relativeLayout11"
+            android:layout_marginTop="20dp"
+            layout="@layout/helpdesk" />
+    </RelativeLayout>
+
+</LinearLayout>

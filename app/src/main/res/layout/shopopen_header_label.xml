@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@color/shop_header_color" >
+
+    <TextView
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.07"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/shop_decription" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/white_color" />
+
+    <TextView
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.12"
+        android:text="@string/shop_income" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/white_color" />
+
+    <TextView
+        style="@style/txt_client_row_item"
+        android:layout_weight="0.13"
+        android:text="@string/shop_expenses" />
+
+
+</LinearLayout>

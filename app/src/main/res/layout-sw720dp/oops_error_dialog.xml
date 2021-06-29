@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:background="@color/white_color" >
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/inventory_tab"
+        android:padding="10dp"
+        android:text="@string/oops_errmsg"
+        android:textColor="@color/white_color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_ActualAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_errmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/oops_errmsg"
+            android:textColor="@color/black_color"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_ActualAmount"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/ll_ActualAmount"
+            android:text="@string/oops_showmsg"
+            android:textColor="@color/black_color"
+            android:textSize="18dp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_ActualAmount"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_OK"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cash_button"
+            android:textColor="@color/white_color"
+            android:text="@string/ok" />
+        <Button
+            android:id="@+id/btn_cancil"
+            style="@style/btn_main"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cancel_popup_btn_bg"
+            android:textColor="@color/white_color"
+            android:text="@string/cancel" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

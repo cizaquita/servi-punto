@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pnl_header"
+        layout="@layout/header_panel" >
+    </include>
+
+    <include
+        android:id="@+id/client_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/pnl_header"
+        layout="@layout/view_row" />
+
+    <TextView
+        android:id="@+id/header_addSupplier"
+        style="@style/inner_header_title"
+        android:layout_below="@+id/client_list_view"
+        android:background="@color/inventory_tab"
+        android:text="@string/label_supp_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_btns"
+        android:layout_below="@+id/header_addSupplier"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/supp_nit"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_suppNit"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="15" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:layout_height="48dp"
+                    android:maxLength="20"
+                    android:text="@string/supp_name"
+                    android:textColor="@color/black_color"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/etxt_suppName"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLength="25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/address"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_supp_address"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLength="100" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/telephone"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_suppPhone"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="10" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/contactname"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_contactname"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20" />
+
+                <TextView
+                    style="@style/txt_supplier"
+                    android:text="@string/contactnum"
+                    android:textColor="@color/black_color" />
+
+                <EditText
+                    android:id="@+id/etxt_contactNum"
+                    style="@style/etxt_supplier"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <include layout="@layout/week_panel" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_Submit"
+            style="@style/btn_main"
+            android:background="@drawable/cash_button"
+            android:text="@string/save"
+            android:textColor="@color/white_color" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            style="@style/btn_main"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/new_cancel"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+</RelativeLayout>

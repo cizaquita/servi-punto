@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="uom_lst">
+        <item>Select UOM</item>
+        <item>Kg</item>
+        <item>Gm</item>
+        <item>Lt</item>
+        <item>MLt</item>
+    </array>
+</resources>

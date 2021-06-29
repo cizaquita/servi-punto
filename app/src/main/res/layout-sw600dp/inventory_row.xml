@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/txt_inv_prodcode"
+        style="@style/list_item_row"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/inv_prodcode" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_inv_prodname"
+        style="@style/list_item_row"
+        android:layout_weight="0.12"
+        android:text="@string/inv_prodrname" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_inv_quantity"
+        style="@style/list_item_row"
+        android:layout_weight="0.13"
+        android:text="@string/inv_quantity" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_inv_sellingprice"
+        style="@style/list_item_row"
+        android:layout_weight="0.13"
+        android:text="@string/sellingprice" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_inv_utility"
+        style="@style/list_item_row"
+        android:layout_weight="0.13"
+        android:text="@string/inv_utilityvalue" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <ImageView
+        android:id="@+id/img_inv_adjustment"
+        style="@style/list_item_row"
+        android:layout_weight="0.13"
+        android:src="@drawable/inventory_edit_icon_bg"
+        android:contentDescription="@string/img_content_desc" />
+
+</LinearLayout>

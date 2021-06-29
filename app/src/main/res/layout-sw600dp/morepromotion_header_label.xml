@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/inventory_tab" >
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/morepromotion_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/morepromotion_descp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/morepromotion_supp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/morepromotion_sdate" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/morepromotion_edate" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/morepromotion_value" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:text="@string/buy_button" />
+
+</LinearLayout>

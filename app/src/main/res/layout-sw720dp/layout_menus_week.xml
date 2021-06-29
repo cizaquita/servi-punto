@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:id="@+id/layout_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menus_week_days"
+            android:textColor="@color/black_color"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_WeekMon"
+            style="@style/btn_menu_week"
+            android:text="@string/week_mon"/>
+
+        <Button
+            android:id="@+id/btn_WeekTue"
+            style="@style/btn_menu_week"
+            android:text="@string/week_tue"/>
+
+        <Button
+            android:id="@+id/btn_WeekWed"
+            style="@style/btn_menu_week"
+            android:text="@string/week_wed"/>
+
+        <Button
+            android:id="@+id/btn_WeekThu"
+            style="@style/btn_menu_week"
+            android:text="@string/week_thu"/>
+
+        <Button
+            android:id="@+id/btn_WeekFri"
+            style="@style/btn_menu_week"
+            android:text="@string/week_fri"/>
+
+        <Button
+            android:id="@+id/btn_WeekSat"
+            style="@style/btn_menu_week"
+            android:text="@string/week_sat"/>
+
+        <Button
+            android:id="@+id/btn_WeekSun"
+            style="@style/btn_menu_week"
+            android:text="@string/week_sun"/>
+    </LinearLayout>
+
+</RelativeLayout>

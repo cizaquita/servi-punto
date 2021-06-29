@@ -1,0 +1,531 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/customer_tab" >
+
+        <TextView
+            style="@style/txt_client_row_item"
+            android:layout_weight="0.07"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/white_color"
+            android:textStyle="bold"
+            android:text="@string/shop_decription" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/customer_view" />
+
+        <TextView
+            style="@style/txt_client_row_item"
+            android:layout_weight="0.12"
+            android:text="@string/shop_income"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/customer_view" />
+
+        <TextView
+            style="@style/txt_client_row_item"
+            android:layout_weight="0.13"
+            android:text="@string/shop_expenses"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/customer_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/openingbal" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_openbal_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_openbal_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/cashsales" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cashsales_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cashsales_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/cardsales" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cardsales_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cardsales_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/deposits" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_shop_depositsInc"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_shop_depositsexp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/payments" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_shop_payments"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_shop_payments_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/cashpurchases" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cashpurchase_inc"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_cashpurchase_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/creditpurchases" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_creditpurchase_inc"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_creditpurchase_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/withdrawls" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_withdraw_inc"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_withdraw_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Delivery" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_delivery_in"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_delivery_out"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customer_tab" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/total" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_total_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_total_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/totalcash" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_totalcash_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_totalcash_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_shop_row_item"
+                    android:layout_weight="0.07"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/finalbalance" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_finalbal_income"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.12"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/customer_view" />
+
+                <TextView
+                    android:id="@+id/txt_finalbal_exp"
+                    style="@style/txt_shop_detail_item"
+                    android:layout_weight="0.13"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/customer_view" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sale_tab"
+    android:padding="5dp" >
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/cash_type"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/sale_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.08"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/cash_decription"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/sale_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/cash_valuemovement"
+        android:textStyle="bold" />
+
+</LinearLayout>

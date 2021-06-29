@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_popup_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white_color"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/header_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_content_desc"
+        android:src="@drawable/m_pines" />
+
+    <TextView
+        android:id="@+id/txt_ProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/img_home"
+        android:layout_toRightOf="@+id/img_logo"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="@string/pines"
+        android:textColor="@color/sale_view"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        style="@style/header_home_icon"
+        android:contentDescription="@string/img_content_desc"
+        android:onClick="showMenuScreen"
+        android:src="@drawable/bhome_icon" />
+
+</RelativeLayout>

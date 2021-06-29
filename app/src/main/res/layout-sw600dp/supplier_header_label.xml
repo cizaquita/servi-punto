@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/inventory_tab" >
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.09"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/txtname"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:text="@string/debt"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/date"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/pay"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/edit"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/inventory_tab" >
+
+   <TextView
+        android:id="@+id/txt_productlistings"
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/inv_prodcode" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.12"
+        android:text="@string/inv_prodrname" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/inv_quantity" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_label_price_row"
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/sellingprice" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_label_utility_row"
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/inv_utilityvalue" />
+     <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/inventory_view" />
+
+    <TextView
+        android:id="@+id/txt_label_adjust_row"
+        style="@style/list_header_row"
+        android:layout_weight="0.13"
+        android:text="@string/adjustment" />
+
+</LinearLayout>
